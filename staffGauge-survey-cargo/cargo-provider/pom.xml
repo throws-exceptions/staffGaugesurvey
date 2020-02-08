@@ -3,14 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>staffGauge-survey-user</artifactId>
+        <artifactId>staffGauge-survey-cargo</artifactId>
         <groupId>com.staffGauge.survey</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>user-provider</artifactId>
-
+    <artifactId>cargo-provider</artifactId>
     <dependencies>
         <dependency>
             <groupId>org.mybatis.generator</groupId>
@@ -34,7 +33,7 @@
         </dependency>
         <dependency>
             <groupId>com.staffGauge.survey</groupId>
-            <artifactId>user-api</artifactId>
+            <artifactId>cargo-api</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
@@ -91,24 +90,24 @@
                         </goals>
                     </execution>
                 </executions>
-
             </plugin>
         </plugins>
-            <!--使得xml能绑定到mapper上-->
-            <resources>
-                <resource>
-                    <directory>src/main/java</directory>
-                    <excludes>
-                        <exclude>**/*.java</exclude>
-                    </excludes>
-                </resource>
-                <resource>
-                    <directory>src/main/resources</directory>
-                    <includes>
-                        <include>**/*.*</include>
-                    </includes>
-                </resource>
-            </resources>
+        <!--使得xml能绑定到mapper上-->
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </resource>
+        </resources>
 
     </build>
+
 </project>

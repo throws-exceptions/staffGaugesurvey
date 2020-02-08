@@ -1,0 +1,28 @@
+
+dubbo:
+  application:
+    name: api-consumer
+    owner: Fu
+  protocol:
+    name: dubbo
+    port: 20882
+  registry:
+    address: zookeeper://192.168.1.142:2181
+    check: true
+    group: dubbo-dev
+    simplified: true
+  metadata-report:
+    address: zookeeper://192.168.1.142:2181
+    retry-times: 30
+    cycle-report: false
+    group: dubbo-dev
+logging:
+  config:
+    classpath: logback.xml
+server:
+  port: 8081
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 3000

@@ -75,8 +75,8 @@ public class UserServiceImpl implements ApiUserService {
     }
 
     @Override
-    public boolean updateManager(String managerName, String permission,String username) {
-        String managerPermission=userMapper.selectPermissionByUserName(managerName);
+    public boolean updateManager(String admin, String permission,String username) {
+        String managerPermission=userMapper.selectPermissionByUserName(admin);
         if(managerPermission.equals("A")){
             try {
                 userMapper.updateInformation(username,permission,null,null);

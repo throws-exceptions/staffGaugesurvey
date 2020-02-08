@@ -25,10 +25,10 @@
     select <include refid="userInformation"></include> from tb_user where permission=#{permission}
     </select>
     <select id="selectPermissionByUserName" resultType="java.lang.String">
-        select permission from tb_user where user_name=#{userName}
+        select permission from tb_user where user_name=#{username}
     </select>
     <select id="selectUserByName" resultMap="BaseResultMap" parameterType="java.lang.String">
-        select <include refid="userInformation"></include> from tb_user where user_name=#{username}
+        select <include refid="BaseColumns"></include> from tb_user where user_name=#{username}
     </select>
 
     <insert id="addUser">

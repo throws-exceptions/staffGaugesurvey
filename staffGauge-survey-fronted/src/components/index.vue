@@ -1,28 +1,32 @@
 <template>
-    
-</template>
-
-<script>
-    export default {
-        name: "index"
-    }
-</script>
-<div id="app">
-  <h1>{{ message }}</h1>
-  <input type="text" v-model="message"><!--v-model是双向环境-->
-  <pre>
+  <div id="index">
+    <h1>{{ message }}</h1>
+    <input type="text" v-model="message"><!--v-model是双向环境-->
+    <pre>
     {{$data|json}}
   </pre>
-</div>
-<!-- built files will be auto injected -->
+  </div>
+    
+</template>
+<!--v-show可以进行判断，真就显示，假就隐藏,v-if也可-->
 <script>
-  new Vue({
-    el:'#app',
-    data:{
-        message: "hello world!"
-    }
-  });
-</script>
-<style scoped>
+    export default {
+        name: "index",
+        el:"#index",
+        data(){
+          return{
+            message:"hello world!"
+          }
 
-</style>
+        },
+        methods:{
+          submi
+
+    }
+
+    }
+
+</script>
+
+<!-- built files will be auto injected -->
+

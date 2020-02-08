@@ -11,7 +11,7 @@ import java.util.List;
 @Mapper
 public interface UserMapper extends TKMapper<User> {
     List<User> selectUsers(@Param("permission")String permission);
-    String selectPermissionByUserName(@Param("username")String userName);
+    String selectPermissionByUserName(@Param("username")String username);
     Integer addUser(@Param("userName")String userName,
                     @Param("password")String password,
                     @Param("salt")String salt,
