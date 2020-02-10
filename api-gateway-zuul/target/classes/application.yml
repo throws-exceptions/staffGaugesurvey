@@ -1,0 +1,10 @@
+server:
+  port: 8080
+zuul:
+  routes:
+    user:
+      path: /user/**
+      url: http://localhost:8081/user/
+    cargo:
+      path: /cargo/**
+      url: http://localhost:8082/cargo/
