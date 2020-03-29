@@ -7,14 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cargo-provider" />
-        <module name="api-gateway-zuul" />
         <module name="user-provider" />
         <module name="user-api" />
         <module name="staffGauge-survey-user-server" />
         <module name="staffGauge-survey-dubbo-cargo-server" />
+        <module name="cargo-api" />
         <module name="staffGauge-survey-cargo-server" />
         <module name="staffGauge-survey-user-client" />
-        <module name="cargo-api" />
+        <module name="api-gateway-zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
