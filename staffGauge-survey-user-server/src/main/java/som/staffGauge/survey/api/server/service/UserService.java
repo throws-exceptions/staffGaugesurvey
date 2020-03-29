@@ -16,7 +16,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 @Service
 public class UserService {
-    @Reference
+//    @Reference
     private ApiUserService apiUserService;
 
     public Map<String,Object> register(String username,String password){
@@ -65,6 +65,14 @@ public class UserService {
         return map;
 
 
+    }
+    public Map<String,Object> getUserInfo(String username,String password){
+        Map<String,Object> map=new ConcurrentHashMap<>();
+        User user=apiUserService.selectUserByName(username);
+        map.put("username",username);
+        map.put("head",user.getHeadImgUrl());
+        map.put("permission",user.getPermission());
+        return map;
     }
     public Map<String,Object> addManager(String admin,String username){
         Map<String,Object> map=new ConcurrentHashMap<>();

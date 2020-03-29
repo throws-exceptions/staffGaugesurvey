@@ -2,6 +2,7 @@ package som.staffGauge.survey.api.server.utils;
 
 import com.alibaba.fastjson.JSONObject;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -12,6 +13,11 @@ public class JSONString {
         JSONObject json=new JSONObject();
         json.put("code",code);
         return json.toJSONString();
+    }
+    public static Map<String,String> parseJson(String str){
+        JSONObject json=new JSONObject();
+        Map map=json.parseObject(str, HashMap.class);
+        return map;
     }
     public static String getJSONString(int code,String msg){
         JSONObject json=new JSONObject();

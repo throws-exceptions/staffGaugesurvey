@@ -4,6 +4,10 @@ import com.auth0.jwt.internal.org.apache.commons.lang3.StringUtils;
 import com.staffGauge.survey.user.api.ApiUserService;
 import com.staffGauge.survey.user.dao.User;
 import org.apache.dubbo.config.annotation.Reference;
+import org.apache.dubbo.remoting.transport.netty.NettyClient;
+import org.apache.dubbo.rpc.ProxyFactory;
+import org.apache.dubbo.rpc.protocol.dubbo.DubboInvoker;
+import org.apache.dubbo.rpc.protocol.dubbo.DubboProtocol;
 import org.apache.ibatis.annotations.Param;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,13 +32,14 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 @Controller
 @RequestMapping("/user")
+@CrossOrigin
 public class UserController {
     private static final Logger logger = LoggerFactory.getLogger(UserController.class);
     @Autowired
     private UserService userService;
     @Autowired
     private RedisClient redisClient;
-    @Reference
+//    @Reference
     private ApiUserService apiUserService;
     private String re="redirect";//跳转界面
     /**
@@ -69,19 +74,23 @@ public class UserController {
      *登录，可行！
      */
     @RequestMapping("/login")
-    @GetMapping
+    @PostMapping
     @ResponseBody
-    public String login(@Param("username")String username,
-                        @Param("password")String password,
-                        @RequestParam(value = "isRemember",defaultValue = "false") boolean isRemember) {
+    public String login(@RequestBody String str) {
         try {
+            Map<String, String> data = JSONString.parseJson(str);
+            String username=data.get("username");
+            String password=data.get("password");
+            String isRemember=data.get("isRemember");
+            logger.info(username +" "+ password);
             Map<String, Object> map = userService.login(username, password);
             if (map.containsKey("sumsg")) {
-                if (isRemember) {
+                if (isRemember=="1") {
                     String token = JWTUtils.encode(username, 60 * 1000);
                     redisClient.set(token,apiUserService.selectUserByName(username),3);
                     map.put("token", token);
                 }
+                map.put("token","");
                 if (map.get("permission").equals("A")) {
                     map.put(re, "/spIndex");
                 }
@@ -94,14 +103,13 @@ public class UserController {
             return JSONString.getJSONString(re,"/login");
         }
     }
-    /**
-     * 退出当前用户登录，可行
-     */
-    @RequestMapping("/logout")
+    @RequestMapping("/info")
     @GetMapping
     @ResponseBody
-    public String logout(){
-        return JSONString.getJSONString(re,"/index");
+    public String getUserInfo(@Param("username")String username,
+                              @Param("password")String password){
+        Map<String,Object> map=userService.getUserInfo(username, password);
+        return JSONString.getJSONString(200,map);
     }
     /**
      * 单点登录，通过调用直接返回用户信息给其他服务
