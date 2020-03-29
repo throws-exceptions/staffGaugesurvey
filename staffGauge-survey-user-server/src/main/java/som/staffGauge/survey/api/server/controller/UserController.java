@@ -39,7 +39,7 @@ public class UserController {
     private UserService userService;
     @Autowired
     private RedisClient redisClient;
-//    @Reference
+    @Reference
     private ApiUserService apiUserService;
     private String re="redirect";//跳转界面
     /**

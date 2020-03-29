@@ -16,7 +16,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 @Service
 public class UserService {
-//    @Reference
+    @Reference
     private ApiUserService apiUserService;
 
     public Map<String,Object> register(String username,String password){
