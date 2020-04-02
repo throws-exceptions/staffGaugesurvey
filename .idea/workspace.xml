@@ -2,46 +2,68 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3d5e719-2627-48f7-97f7-77d7d3434bcf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staffGauge-survey-user-server/src/main/java/som/staffGauge/survey/api/server/Filter/LoginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staffGauge-survey-user-server/src/main/java/som/staffGauge/survey/api/server/service/MailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staffGauge-survey-user-server/src/main/java/som/staffGauge/survey/api/server/utils/ErrorMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staffGauge-survey-user-server/src/main/java/som/staffGauge/survey/api/server/utils/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-api/src/main/java/com/staffGauge/survey/user/dao/UserCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/java/com/staffGauge/survey/user/dal/persistence/UserCodeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/java/com/staffGauge/survey/user/dal/persistence/UserCodeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/修复Bug.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway-zuul/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway-zuul/target/classes/com/staffGauge/survey/zuul/ServiceApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo-server/target/classes/com/staffGauge/survey/cargo/CargoServerApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo-server/target/classes/com/staffGauge/survey/cargo/controller/CargoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo-server/target/classes/com/staffGauge/survey/cargo/filter/CargoFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-api/target/classes/com/staffGauge/survey/cargo/api/ApiCargoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-api/target/classes/com/staffGauge/survey/cargo/dao/Cargo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/target/classes/com/gen/mybatis/MapperConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/target/classes/com/staffGauge/survey/cargo/dal/persistence/CargoMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/target/classes/com/staffGauge/survey/cargo/dal/persistence/CargoMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/target/classes/com/staffGauge/survey/cargo/tkmapper/TKMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/target/classes/mybatis-generater.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user-client/staffGauge-survey-user-client.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user-client/target/classes/com/staffGauge/survey/user/client/LoginFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user-client/src/main/java/com/staffGauge/survey/user/client/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user-client/src/main/java/com/staffGauge/survey/user/client/LoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user-server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/staffGauge-survey-user-server/src/main/java/som/staffGauge/survey/api/server/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user-server/src/main/java/som/staffGauge/survey/api/server/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/staffGauge-survey-user-server/src/main/java/som/staffGauge/survey/api/server/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user-server/src/main/java/som/staffGauge/survey/api/server/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user-server/src/main/java/som/staffGauge/survey/api/server/utils/JSONString.java" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user-server/src/main/java/som/staffGauge/survey/api/server/utils/JSONString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/staffGauge-survey-user-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user-server/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/staffGauge-survey-user-server/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user-server/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/staffGauge-survey-user-server/target/classes/som/staffGauge/survey/api/server/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user-server/target/classes/som/staffGauge/survey/api/server/controller/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/staffGauge-survey-user-server/target/classes/som/staffGauge/survey/api/server/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user-server/target/classes/som/staffGauge/survey/api/server/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/staffGauge-survey-user-server/target/classes/som/staffGauge/survey/api/server/utils/JSONString.class" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user-server/target/classes/som/staffGauge/survey/api/server/utils/JSONString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user-server/target/classes/som/staffGauge/survey/api/server/utils/JWTUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user-server/target/classes/som/staffGauge/survey/api/server/utils/JWTUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user-server/target/classes/som/staffGauge/survey/api/server/utils/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user-server/target/classes/som/staffGauge/survey/api/server/utils/Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-api/src/main/java/com/staffGauge/survey/user/api/ApiUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-api/src/main/java/com/staffGauge/survey/user/api/ApiUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-api/src/main/java/com/staffGauge/survey/user/dao/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-api/src/main/java/com/staffGauge/survey/user/dao/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-api/target/classes/com/staffGauge/survey/user/api/ApiUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-api/target/classes/com/staffGauge/survey/user/api/ApiUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-api/target/classes/com/staffGauge/survey/user/dao/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-api/target/classes/com/staffGauge/survey/user/dao/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/java/com/staffGauge/survey/user/dal/persistence/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/java/com/staffGauge/survey/user/dal/persistence/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/java/com/staffGauge/survey/user/dal/persistence/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/java/com/staffGauge/survey/user/dal/persistence/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/java/com/staffGauge/survey/user/serverImpl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/java/com/staffGauge/survey/user/serverImpl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/resources/com/gen/mybatis/MapperConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/resources/com/gen/mybatis/MapperConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/resources/mybatis-generater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/resources/mybatis-generater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/target/classes/com/gen/mybatis/MapperConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/target/classes/com/gen/mybatis/MapperConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/target/classes/com/staffGauge/survey/user/dal/persistence/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/target/classes/com/staffGauge/survey/user/dal/persistence/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/target/classes/com/staffGauge/survey/user/dal/persistence/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/target/classes/com/staffGauge/survey/user/dal/persistence/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/target/classes/com/staffGauge/survey/user/serverImpl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/target/classes/com/staffGauge/survey/user/serverImpl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/target/classes/com/staffGauge/survey/user/utils/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/target/classes/com/staffGauge/survey/user/utils/Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/target/classes/mybatis-generater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/target/classes/mybatis-generater.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -51,51 +73,13 @@
       <list>
         <option value="FxmlFile" />
         <option value="Tag Library Descriptor" />
-        <option value="Enum" />
         <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
         <option value="Vue Single File Component" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>pro</find>
-      <find>api</find>
-      <find>redirect</find>
-      <find>User</find>
-      <find>manager</find>
-      <find>timeout</find>
-      <find>settimeout</find>
-      <find>setReadTimeout</find>
-      <find>getExtension</find>
-      <find>dubbo</find>
-      <find>onap</find>
-      <find>onApplicationEvent</find>
-      <find>export</find>
-      <find>checkAndUpdateSubConfigs</find>
-      <find>ona</find>
-      <find>typings</find>
-      <find>invokeMethod</find>
-      <find>refer</find>
-      <find>&lt;T&gt; Invoker</find>
-      <find>Network Error</find>
-      <find>9528</find>
-      <find>pars</find>
-      <find>watch</find>
-      <find>route</find>
-      <find>Super</find>
-      <find>height</find>
-      <find>dev</find>
-      <find>@/utils/validate</find>
-      <find>$dark_gray</find>
-      <find>tips</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>#fff</replace>
-      <replace>#889aa4</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -104,7 +88,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
-        <option name="userSettingsFile" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3/conf/settings.xml" />
+        <option name="userSettingsFile" value="$USER_HOME$/百度网盘下载/settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -135,12 +119,15 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/vue-manger" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/java/com/staffGauge/survey/user/dal/persistence" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -149,23 +136,26 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="ts.external.directory.path" value="D:\IntelliJ IDEA 2019.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/java/com/staffGauge/survey/user/dal/persistence" />
       <recent name="D:\毕设\vue-manger\src\utils" />
       <recent name="D:\毕设\vue-manger\src\icons\svg" />
       <recent name="D:\毕设\vue-manger\src\components" />
       <recent name="D:\毕设\vue-manger\src\icons" />
-      <recent name="D:\毕设\staffGauge-survey-api-server\src\main\java\som\staffGauge\survey\api\server\redis" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="som.staffGauge.survey.api.server.Filter" />
       <recent name="com.staffGauge.survey.cargo.dao" />
       <recent name="com.staffGauge.survey.cargo.tkmapper" />
       <recent name="som.staffGauge.survey.api.server.utils" />
       <recent name="com.staffGauge.survey.user.cont" />
-      <recent name="com.staffGauge.survey.user" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\毕设\vue-manger\src\assets" />
@@ -180,7 +170,33 @@
       <command value="mvn install" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserServerApplication">
+  <component name="RunManager" selected="npm.serve">
+    <configuration name="JSONString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="som.staffGauge.survey.api.server.utils.JSONString" />
+      <module name="staffGauge-survey-user-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="som.staffGauge.survey.api.server.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MailService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="som.staffGauge.survey.api.server.service.MailService" />
+      <module name="staffGauge-survey-user-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="som.staffGauge.survey.api.server.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -189,19 +205,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.staffGauge.survey.user.serverImpl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Utils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="som.staffGauge.survey.api.server.utils.Utils" />
-      <module name="staffGauge-survey-user-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="som.staffGauge.survey.api.server.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -313,6 +316,8 @@
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.staffGauge.survey.user.UserProviderApplication" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -321,6 +326,8 @@
       <module name="staffGauge-survey-user-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="som.staffGauge.survey.api.server.UserServerApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -339,13 +346,14 @@
       <scripts>
         <script value="serve" />
       </scripts>
-      <node-interpreter value="$USER_HOME$/下载/node-v12.16.1-linux-x64/bin/node" />
+      <node-interpreter value="/usr/bin/node" />
       <envs />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Application.UserServiceImpl" />
-      <item itemvalue="Application.Utils" />
+      <item itemvalue="Application.JSONString" />
+      <item itemvalue="Application.MailService" />
       <item itemvalue="Maven.mybatis-generator" />
       <item itemvalue="npm.serve" />
       <item itemvalue="Spring Boot.ServiceApplication" />
@@ -357,8 +365,9 @@
       <list>
         <item itemvalue="Spring Boot.UserServerApplication" />
         <item itemvalue="Spring Boot.UserProviderApplication" />
+        <item itemvalue="Application.JSONString" />
+        <item itemvalue="Application.MailService" />
         <item itemvalue="Application.UserServiceImpl" />
-        <item itemvalue="Application.Utils" />
       </list>
     </recent_temporary>
   </component>
@@ -367,7 +376,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="365299b8-812a-4bbb-b67b-da09cc945431" name="Default Changelist" comment="" />
+      <changelist id="b3d5e719-2627-48f7-97f7-77d7d3434bcf" name="Default Changelist" comment="" />
       <created>1577499941987</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -411,6 +420,20 @@
       <workItem from="1585454488726" duration="3542000" />
       <workItem from="1585459043781" duration="2828000" />
       <workItem from="1585461906414" duration="1405000" />
+      <workItem from="1585479648037" duration="6139000" />
+      <workItem from="1585527247260" duration="5552000" />
+      <workItem from="1585533398272" duration="6210000" />
+      <workItem from="1585546743768" duration="25000" />
+      <workItem from="1585556276786" duration="5856000" />
+      <workItem from="1585572472457" duration="1876000" />
+      <workItem from="1585574384041" duration="79000" />
+      <workItem from="1585575886986" duration="531000" />
+      <workItem from="1585578283041" duration="3043000" />
+      <workItem from="1585614828977" duration="27419000" />
+      <workItem from="1585702248310" duration="23187000" />
+      <workItem from="1585741626745" duration="3840000" />
+      <workItem from="1585747320461" duration="1225000" />
+      <workItem from="1585790454283" duration="1787000" />
     </task>
     <task id="LOCAL-00001" summary="2020.2.8">
       <created>1581152641638</created>
@@ -445,14 +468,23 @@
       <screen x="0" y="34" width="1366" height="734" />
     </state>
     <state x="273" y="61" width="800" height="675" key="#Docker/0.34.1366.734@0.34.1366.734" timestamp="1585459342881" />
+    <state x="278" y="58" width="800" height="678" key="#ESLint" timestamp="1585579889689">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state x="278" y="58" width="800" height="678" key="#ESLint/0.26.1366.742@0.26.1366.742" timestamp="1585579889689" />
     <state x="278" y="57" width="800" height="675" key="#Project_Structure" timestamp="1585453751372">
       <screen x="0" y="34" width="1366" height="734" />
     </state>
     <state x="278" y="57" width="800" height="675" key="#Project_Structure/0.34.1366.734@0.34.1366.734" timestamp="1585453751372" />
-    <state x="141" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585460635535">
-      <screen x="0" y="34" width="1366" height="734" />
+    <state x="141" y="46" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585578928202">
+      <screen x="0" y="26" width="1366" height="742" />
     </state>
-    <state x="141" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.34.1366.734@0.34.1366.734" timestamp="1585460635535" />
+    <state x="141" y="46" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.26.1366.742@0.26.1366.742" timestamp="1585578928202" />
+    <state x="141" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.34.1366.734@0.34.1366.734" timestamp="1585528865690" />
+    <state x="491" y="81" width="564" height="633" key="#com.intellij.ide.util.MemberChooser" timestamp="1585704886739">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state x="491" y="81" width="564" height="633" key="#com.intellij.ide.util.MemberChooser/0.26.1366.742@0.26.1366.742" timestamp="1585704886739" />
     <state x="415" y="179" width="525" height="431" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1585454557204">
       <screen x="0" y="34" width="1366" height="734" />
     </state>
@@ -461,50 +493,105 @@
       <screen x="0" y="34" width="1366" height="734" />
     </state>
     <state x="349" y="34" width="658" height="732" key="#staffGauge-survey-user-server/Dockerfile/0.34.1366.734@0.34.1366.734" timestamp="1585459354455" />
-    <state x="466" y="154" width="424" height="482" key="FileChooserDialogImpl" timestamp="1585461091240">
+    <state x="466" y="147" width="424" height="482" key="FileChooserDialogImpl" timestamp="1585578339951">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state x="466" y="147" key="FileChooserDialogImpl/0.26.1366.742@0.26.1366.742" timestamp="1585578339951" />
+    <state x="466" y="154" width="424" height="482" key="FileChooserDialogImpl/0.34.1366.734@0.34.1366.734" timestamp="1585535161421" />
+    <state width="629" height="191" key="GridCell.Tab.0.bottom" timestamp="1585747276602">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state width="629" height="191" key="GridCell.Tab.0.bottom/0.26.1366.742@0.26.1366.742" timestamp="1585747276602" />
+    <state width="1292" height="199" key="GridCell.Tab.0.bottom/0.34.1366.734@0.34.1366.734" timestamp="1585533359941" />
+    <state width="629" height="191" key="GridCell.Tab.0.center" timestamp="1585747276602">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state width="629" height="191" key="GridCell.Tab.0.center/0.26.1366.742@0.26.1366.742" timestamp="1585747276602" />
+    <state width="1292" height="199" key="GridCell.Tab.0.center/0.34.1366.734@0.34.1366.734" timestamp="1585533359940" />
+    <state width="629" height="191" key="GridCell.Tab.0.left" timestamp="1585747276601">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state width="629" height="191" key="GridCell.Tab.0.left/0.26.1366.742@0.26.1366.742" timestamp="1585747276601" />
+    <state width="1292" height="199" key="GridCell.Tab.0.left/0.34.1366.734@0.34.1366.734" timestamp="1585533359940" />
+    <state width="629" height="191" key="GridCell.Tab.0.right" timestamp="1585747276602">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state width="629" height="191" key="GridCell.Tab.0.right/0.26.1366.742@0.26.1366.742" timestamp="1585747276602" />
+    <state width="1292" height="199" key="GridCell.Tab.0.right/0.34.1366.734@0.34.1366.734" timestamp="1585533359941" />
+    <state width="1312" height="191" key="GridCell.Tab.1.bottom" timestamp="1585734033796">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state width="1312" height="191" key="GridCell.Tab.1.bottom/0.26.1366.742@0.26.1366.742" timestamp="1585734033796" />
+    <state width="1292" height="199" key="GridCell.Tab.1.bottom/0.34.1366.734@0.34.1366.734" timestamp="1585533359943" />
+    <state width="1312" height="191" key="GridCell.Tab.1.center" timestamp="1585734033796">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state width="1312" height="191" key="GridCell.Tab.1.center/0.26.1366.742@0.26.1366.742" timestamp="1585734033796" />
+    <state width="1292" height="199" key="GridCell.Tab.1.center/0.34.1366.734@0.34.1366.734" timestamp="1585533359942" />
+    <state width="1312" height="191" key="GridCell.Tab.1.left" timestamp="1585734033796">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state width="1312" height="191" key="GridCell.Tab.1.left/0.26.1366.742@0.26.1366.742" timestamp="1585734033796" />
+    <state width="1292" height="199" key="GridCell.Tab.1.left/0.34.1366.734@0.34.1366.734" timestamp="1585533359942" />
+    <state width="1312" height="191" key="GridCell.Tab.1.right" timestamp="1585734033796">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state width="1312" height="191" key="GridCell.Tab.1.right/0.26.1366.742@0.26.1366.742" timestamp="1585734033796" />
+    <state width="1292" height="199" key="GridCell.Tab.1.right/0.34.1366.734@0.34.1366.734" timestamp="1585533359942" />
+    <state width="1312" height="212" key="GridCell.Tab.2.bottom" timestamp="1585660093876">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state width="1312" height="212" key="GridCell.Tab.2.bottom/0.26.1366.742@0.26.1366.742" timestamp="1585660093876" />
+    <state width="1292" height="199" key="GridCell.Tab.2.bottom/0.34.1366.734@0.34.1366.734" timestamp="1585533359944" />
+    <state width="1312" height="212" key="GridCell.Tab.2.center" timestamp="1585660093875">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state width="1312" height="212" key="GridCell.Tab.2.center/0.26.1366.742@0.26.1366.742" timestamp="1585660093875" />
+    <state width="1292" height="199" key="GridCell.Tab.2.center/0.34.1366.734@0.34.1366.734" timestamp="1585533359943" />
+    <state width="1312" height="212" key="GridCell.Tab.2.left" timestamp="1585660093875">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state width="1312" height="212" key="GridCell.Tab.2.left/0.26.1366.742@0.26.1366.742" timestamp="1585660093875" />
+    <state width="1292" height="199" key="GridCell.Tab.2.left/0.34.1366.734@0.34.1366.734" timestamp="1585533359943" />
+    <state width="1312" height="212" key="GridCell.Tab.2.right" timestamp="1585660093876">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state width="1312" height="212" key="GridCell.Tab.2.right/0.26.1366.742@0.26.1366.742" timestamp="1585660093876" />
+    <state width="1292" height="199" key="GridCell.Tab.2.right/0.34.1366.734@0.34.1366.734" timestamp="1585533359943" />
+    <state x="216" y="54" width="924" height="685" key="Maven.ArtifactSearchDialog" timestamp="1585557285644">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state x="216" y="54" width="924" height="685" key="Maven.ArtifactSearchDialog/0.26.1366.742@0.26.1366.742" timestamp="1585557285644" />
+    <state x="179" y="50" width="997" height="689" key="Registry" timestamp="1585529094880">
       <screen x="0" y="34" width="1366" height="734" />
     </state>
-    <state x="466" y="154" width="424" height="482" key="FileChooserDialogImpl/0.34.1366.734@0.34.1366.734" timestamp="1585461091240" />
-    <state width="1292" height="193" key="GridCell.Tab.0.bottom" timestamp="1585479609274">
+    <state x="179" y="50" width="997" height="689" key="Registry/0.34.1366.734@0.34.1366.734" timestamp="1585529094880" />
+    <state x="238" y="26" width="1037" height="731" key="SettingsEditor" timestamp="1585629714522">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state x="238" y="26" width="1037" height="731" key="SettingsEditor/0.26.1366.742@0.26.1366.742" timestamp="1585629714522" />
+    <state x="164" y="34" key="SettingsEditor/0.34.1366.734@0.34.1366.734" timestamp="1585535194775" />
+    <state x="403" y="207" width="550" height="375" key="jetbrains.nodejs.interpreters-dialog" timestamp="1585482187599">
       <screen x="0" y="34" width="1366" height="734" />
     </state>
-    <state width="1292" height="193" key="GridCell.Tab.0.bottom/0.34.1366.734@0.34.1366.734" timestamp="1585479609274" />
-    <state width="1292" height="193" key="GridCell.Tab.0.center" timestamp="1585479609273">
-      <screen x="0" y="34" width="1366" height="734" />
+    <state x="403" y="207" width="550" height="375" key="jetbrains.nodejs.interpreters-dialog/0.34.1366.734@0.34.1366.734" timestamp="1585482187599" />
+    <state x="0" y="26" width="1356" height="742" key="new project wizard" timestamp="1585573694625">
+      <screen x="0" y="26" width="1366" height="742" />
     </state>
-    <state width="1292" height="193" key="GridCell.Tab.0.center/0.34.1366.734@0.34.1366.734" timestamp="1585479609273" />
-    <state width="1292" height="193" key="GridCell.Tab.0.left" timestamp="1585479609273">
-      <screen x="0" y="34" width="1366" height="734" />
+    <state x="0" y="26" width="1356" height="742" key="new project wizard/0.26.1366.742@0.26.1366.742" timestamp="1585573694625" />
+    <state x="376" y="26" width="604" height="742" key="refactoring.ChangeSignatureDialog" timestamp="1585707484329">
+      <screen x="0" y="26" width="1366" height="742" />
     </state>
-    <state width="1292" height="193" key="GridCell.Tab.0.left/0.34.1366.734@0.34.1366.734" timestamp="1585479609273" />
-    <state width="1292" height="193" key="GridCell.Tab.0.right" timestamp="1585479609273">
-      <screen x="0" y="34" width="1366" height="734" />
+    <state x="376" y="26" width="604" height="742" key="refactoring.ChangeSignatureDialog/0.26.1366.742@0.26.1366.742" timestamp="1585707484329" />
+    <state x="347" y="169" width="672" height="688" key="run.anything.popup" timestamp="1585573803178">
+      <screen x="0" y="26" width="1366" height="742" />
     </state>
-    <state width="1292" height="193" key="GridCell.Tab.0.right/0.34.1366.734@0.34.1366.734" timestamp="1585479609273" />
-    <state width="1292" height="193" key="GridCell.Tab.1.bottom" timestamp="1585479609275">
-      <screen x="0" y="34" width="1366" height="734" />
-    </state>
-    <state width="1292" height="193" key="GridCell.Tab.1.bottom/0.34.1366.734@0.34.1366.734" timestamp="1585479609275" />
-    <state width="1292" height="193" key="GridCell.Tab.1.center" timestamp="1585479609274">
-      <screen x="0" y="34" width="1366" height="734" />
-    </state>
-    <state width="1292" height="193" key="GridCell.Tab.1.center/0.34.1366.734@0.34.1366.734" timestamp="1585479609274" />
-    <state width="1292" height="193" key="GridCell.Tab.1.left" timestamp="1585479609274">
-      <screen x="0" y="34" width="1366" height="734" />
-    </state>
-    <state width="1292" height="193" key="GridCell.Tab.1.left/0.34.1366.734@0.34.1366.734" timestamp="1585479609274" />
-    <state width="1292" height="193" key="GridCell.Tab.1.right" timestamp="1585479609274">
-      <screen x="0" y="34" width="1366" height="734" />
-    </state>
-    <state width="1292" height="193" key="GridCell.Tab.1.right/0.34.1366.734@0.34.1366.734" timestamp="1585479609274" />
-    <state x="164" y="34" key="SettingsEditor" timestamp="1585460498853">
-      <screen x="0" y="34" width="1366" height="734" />
-    </state>
-    <state x="164" y="34" key="SettingsEditor/0.34.1366.734@0.34.1366.734" timestamp="1585460498853" />
-    <state x="347" y="175" width="672" height="680" key="run.anything.popup" timestamp="1585462100474">
-      <screen x="0" y="34" width="1366" height="734" />
-    </state>
+    <state x="347" y="169" width="672" height="688" key="run.anything.popup/0.26.1366.742@0.26.1366.742" timestamp="1585573803178" />
     <state x="347" y="175" width="672" height="680" key="run.anything.popup/0.34.1366.734@0.34.1366.734" timestamp="1585462100474" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1585712802406">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.26.1366.742@0.26.1366.742" timestamp="1585712802406" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -513,6 +600,11 @@
           <url>file://$PROJECT_DIR$/vueAdmin-template/src/views/login/index.vue</url>
           <line>119</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/staffGauge-survey-user-server/src/main/java/som/staffGauge/survey/api/server/controller/UserController.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

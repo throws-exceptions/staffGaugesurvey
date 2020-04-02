@@ -2,6 +2,7 @@ package com.staffGauge.survey.user.serverImpl;
 
 import com.staffGauge.survey.user.api.ApiUserService;
 
+import com.staffGauge.survey.user.dal.persistence.UserCodeMapper;
 import com.staffGauge.survey.user.dal.persistence.UserMapper;
 import com.staffGauge.survey.user.dao.User;
 
@@ -28,6 +29,8 @@ public class UserServiceImpl implements ApiUserService {
     private static final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
     @Autowired
     private UserMapper userMapper;
+    @Autowired
+    private UserCodeMapper userCodeMapper;
 
     @Override
     public List<User> selectAllUsers() {
@@ -47,7 +50,6 @@ public class UserServiceImpl implements ApiUserService {
     public User selectUserByName(String username) {
         return userMapper.selectUserByName(username);
     }
-
     /**
      * 手机号功能暂时未开发
      * @param username
@@ -55,7 +57,7 @@ public class UserServiceImpl implements ApiUserService {
      * @return
      */
     @Override
-    public boolean register(String username, String password) {
+    public boolean register(String mail,String username, String password) {
         User user = new User();
         user.setUserName(username);
         user.setSalt(UUID.randomUUID().toString().substring(0, 5));
@@ -64,7 +66,7 @@ public class UserServiceImpl implements ApiUserService {
         user.setPassword(Utils.MD5(password+user.getSalt()));
         try {
             userMapper.addUser(user.getUserName(),user.getPassword(),user.getSalt(),
-                    user.getHeadImgUrl(),"123456","B");
+                    user.getHeadImgUrl(),"123456","B",mail);
             logger.debug("注册成功");
             return true;
         }catch (Exception e){
@@ -106,6 +108,39 @@ public class UserServiceImpl implements ApiUserService {
             logger.error("更新用户信息失败"+e.getMessage());
         }
         return false;
+    }
+
+    @Override
+    public String selectUserCode(String username) {
+        String code="";
+        try {
+            code=userCodeMapper.selectUserCode(username);
+        }catch (Exception e){
+            logger.error("用户获取验证码失败"+e.getMessage());
+        }
+        return code;
+    }
+
+    @Override
+    public boolean insertCode(String username, String code) {
+        Integer res=0;
+        try{
+            res=userCodeMapper.insertCode(username,code);
+        }catch (Exception e){
+            logger.error("用户写入验证码失败"+e.getMessage());
+        }
+        return res==1?true:false;
+    }
+
+    @Override
+    public boolean updateCode(String username, String code) {
+        Integer res=0;
+        try{
+            res=userCodeMapper.updateCode(username,code);
+        }catch (Exception e){
+            logger.error("用户更新验证码失败"+e.getMessage());
+        }
+        return res==1?true:false;
     }
 }
 

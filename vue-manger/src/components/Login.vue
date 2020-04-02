@@ -9,7 +9,7 @@
         <div>
           <el-form class="login-form" ref="loginForm" :model="loginForm" :rules="loginRules" auto-complete="on" label-position="left">
             <el-form-item prop="username">
-              <el-input v-model="loginForm.username" prefix-icon="iconfont icon-people_fill" placeholder="用户名/邮箱"></el-input>
+              <el-input v-model="loginForm.username" prefix-icon="iconfont icon-people_fill" placeholder="用户名"></el-input>
             </el-form-item>
             <el-form-item prop="password">
               <el-input
@@ -22,7 +22,7 @@
               />
             </el-form-item>
             <div style="height: 30px">
-              <el-checkbox  v-model="loginForm.isRemember" true-label="'1'" false-label="'0'" style="height:15px;float:right;padding-right:20px;color:#fff">记住我</el-checkbox>
+              <el-checkbox  v-model="loginForm.isRemember" true-label="1" false-label="0" style="height:15px;float:right;padding-right:20px;color:#fff">记住我</el-checkbox>
             </div>
             <div style="height: 30px">
               <el-button type="primary" style="width:30%;margin-bottom:30px;border-radius: 20px;" @click.native.prevent="handleRegister">注册</el-button>
@@ -41,8 +41,8 @@ export default {
     return {
       // 登录表单数据对象
       loginForm: {
-        username: 'admin',
-        password: '123111',
+        username: '傅杰青',
+        password: '123456',
         isRemember: '0'
       },
       loginRules: {
@@ -62,13 +62,20 @@ export default {
         if (!valid) return
         const response = await this.$http.post('user/login', this.loginForm)
         const { data: result } = response
-        if (response.status === 200) {
-          if (this.loginForm.isRemember === "'1'") window.sessionStorage.setItem('token', result.token)
+        console.log(result)
+        if (result.code === 200) {
+          window.sessionStorage.setItem('head', result.head)
+          window.sessionStorage.setItem('permission',result.permission)
+          window.sessionStorage.setItem('username',result.username)
+          if (this.loginForm.isRemember === '1') window.sessionStorage.setItem('token', result.token_id)
           this.$message.success('登录成功')
           this.$router.push({ path: '/index' })
-        } else if (result.status === 500) return this.$message.error('用户名或密码错误!')
+        } else if (result.code === 500) return this.$message.error(result.msg)
         else { return this.$message.info('服务器异常') }
       })
+    },
+    handleRegister () {
+      this.$router.push('/register')
     }
   }
 }
@@ -143,12 +150,12 @@ export default {
     /*}*/
   }
   .login-form{
-    position: absolute;
+    /*position: absolute;*/
     bottom: 0;
     width: 100%;
-    padding: 0 20px;
+    padding: 50px 20px 0 20px;
     box-sizing: border-box;
-
+    margin-top: 50px;
   }
 
     /*.tips {*/
@@ -186,7 +193,7 @@ export default {
 <!--    border-radius: 50px;-->
 <!--  }-->
 <!--</style>-->
-<style lang="scss">
+<style lang="scss" >
   /* 修复input 背景不协调 和光标变色 */
   /* Detail see https://github.com/PanJiaChen/vue-element-admin/pull/927 */
 
@@ -203,7 +210,7 @@ export default {
   /* reset element-ui css */
   /*.login-container {*/
     .el-input {
-      display: inline-block;
+      /*display: inline-block;*/
       height: 47px;
       width: 85%;
       /*background-color: rgba(0,0,0,0.5);*/
@@ -211,7 +218,7 @@ export default {
       input {
         background: transparent;
         border: 0px;
-        -webkit-appearance: none;
+        /*-webkit-appearance: none;*/
         border-radius: 0px;
         padding: 12px 5px 12px 15px;
         color: $light_gray;
@@ -227,7 +234,7 @@ export default {
 
     .el-form-item {
       border: 1px solid;
-      background: rgba(255, 255, 255, 0.7);
+      background: rgba(255, 255, 255, 0.8);
       border-radius: 50px;
       /*color: #11ff22;*/
     }

@@ -22,8 +22,28 @@ public class User implements Serializable {
 
     @Column(name = "phone_number")
     private String phoneNumber;
-
+    //权限
     private String permission;
+    //邮箱
+    private String mail;
+    //验证码
+    private String code;
+
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
 
     /**
      * @return user_id

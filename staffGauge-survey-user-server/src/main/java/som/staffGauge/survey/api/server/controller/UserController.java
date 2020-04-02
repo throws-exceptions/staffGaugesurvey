@@ -17,14 +17,18 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import som.staffGauge.survey.api.server.redis.RedisClient;
+import som.staffGauge.survey.api.server.service.MailService;
 import som.staffGauge.survey.api.server.service.UserService;
+import som.staffGauge.survey.api.server.utils.ErrorMessage;
 import som.staffGauge.survey.api.server.utils.JSONString;
 import som.staffGauge.survey.api.server.utils.JWTUtils;
+import som.staffGauge.survey.api.server.utils.Menu;
 
 import javax.servlet.http.HttpServletResponse;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -39,70 +43,103 @@ public class UserController {
     private UserService userService;
     @Autowired
     private RedisClient redisClient;
+    @Autowired
+    private MailService mailService;
     @Reference
     private ApiUserService apiUserService;
-    private String re="redirect";//跳转界面
+    private String msg = "msg";
+
     /**
      * 注册用户,可行！
      */
     @RequestMapping(path = "/register")
     @PostMapping
     @ResponseBody
-    public String register(Model model, @RequestParam("username")String username,
-                          @RequestParam("password")String password,
-                          @RequestParam(value = "isRemember",defaultValue = "false") boolean isRemember
-                          ) {
+    public String register(@RequestBody String request) {
         try {
-            Map<String, Object> map = userService.register(username, password);
-            if (map.containsKey("sumsg")) {
-                if (isRemember) {
-                    String token = JWTUtils.encode(username, 60 * 1000);
-                    redisClient.set(token,username,3);//测试版是3s过期时间
-                    map.put("token", token);
+            //解析JSON数据
+            Map<String, String> data = JSONString.parseJson(request);
+            String mail = data.get("mail");//注册邮箱
+            String username = data.get("username");//用户名
+            String password = data.get("password");//密码
+            String verifyCode=data.get("Code");
+            String test=apiUserService.selectUserCode(username);
+            logger.info(data.toString());
+            logger.info(test);
+            logger.info(verifyCode);
+
+            if(verifyCode.equals(test)) {
+                Map<String, Object> map = userService.register(mail, username, password);
+                if (map.containsKey("sumsg")) {
+                    return JSONString.getJSONString(200, map);
                 }
-                map.put(re,"/index");
-                return JSONString.getJSONString(200,map);
-            }
-            return JSONString.getJSONString(500,map);
-        }catch (Exception e){
-            logger.error("注册失败"+e.getMessage());
-            model.addAttribute("msg","服务器错误，注册失败");
-            return JSONString.getJSONString(re,"/register");
+                return JSONString.getJSONString(200, map);
+            }else return JSONString.getJSONString(500,"验证失败!");
+
+        } catch (Exception e) {
+            logger.error("注册失败" + e.getMessage());
+            return JSONString.getJSONString(501, ErrorMessage.REGISTER_ERROR.message);
         }
     }
+
+    @RequestMapping(path = "/verifyCode")
+    @PostMapping
+    @ResponseBody
+    public String getVerifyCode(@RequestBody String request) {
+        //未解析json字符串所以导致错误
+        Map<String,String> data=JSONString.parseJson(request);
+        String email=data.get("mail");
+        String username=data.get("username");
+        String verifyCode = String.valueOf(new Random().nextInt(899999) + 100000);
+        String message = "您的注册验证码为：" + verifyCode;
+//        String email = mail.replace("%40", "@");
+        try {
+            userService.verifyCode(username,verifyCode);
+            mailService.sendSimpleMail(email, "注册验证码", message);
+        } catch (Exception e) {
+            return JSONString.getJSONString(500,ErrorMessage.VERIFYCODE_ERROR.message);
+        }
+        return JSONString.getJSONString(200,"发送验证码成功！");
+    }
+
     /**
      *登录，可行！
      */
     @RequestMapping("/login")
     @PostMapping
     @ResponseBody
-    public String login(@RequestBody String str) {
+    public String login(@RequestBody String request) {
         try {
-            Map<String, String> data = JSONString.parseJson(str);
+            Map<String, String> data = JSONString.parseJson(request);
             String username=data.get("username");
             String password=data.get("password");
             String isRemember=data.get("isRemember");
-            logger.info(username +" "+ password);
+            logger.info(username +" "+ password+" "+isRemember);
             Map<String, Object> map = userService.login(username, password);
             if (map.containsKey("sumsg")) {
-                if (isRemember=="1") {
+                System.out.println(isRemember);
+                if (isRemember.equals("1")) {
                     String token = JWTUtils.encode(username, 60 * 1000);
+                    System.out.println(token);
                     redisClient.set(token,apiUserService.selectUserByName(username),3);
-                    map.put("token", token);
+                    map.put("token_id", token);
                 }
                 map.put("token","");
-                if (map.get("permission").equals("A")) {
-                    map.put(re, "/spIndex");
-                }
-                map.put(re, "/index");
                 return JSONString.getJSONString(200, map);
             }
             return JSONString.getJSONString(500, map);
         }catch (Exception e){
             logger.error("登录失败"+e.getMessage());
-            return JSONString.getJSONString(re,"/login");
+            return JSONString.getJSONString(msg,ErrorMessage.LOGIN_ERROR.message);
         }
     }
+
+    /**
+     * 获取用户信息
+     * @param username
+     * @param password
+     * @return
+     */
     @RequestMapping("/info")
     @GetMapping
     @ResponseBody
@@ -110,6 +147,19 @@ public class UserController {
                               @Param("password")String password){
         Map<String,Object> map=userService.getUserInfo(username, password);
         return JSONString.getJSONString(200,map);
+    }
+    /**
+     * 根据权限获取用户菜单
+     */
+    @RequestMapping("/menus")
+    @PostMapping
+    @ResponseBody
+    public String getMenus(@RequestBody String request){
+        Map<String,String> data=JSONString.parseJson(request);
+        String permission=data.get("permission");
+        String res=userService.getMenu(permission);
+        if(StringUtils.isNotBlank(res))return res;
+        else return JSONString.getJSONString(500,"获取列表失败！");
     }
     /**
      * 单点登录，通过调用直接返回用户信息给其他服务
@@ -136,7 +186,7 @@ public class UserController {
             return JSONString.getJSONString(500,map);
         }catch (Exception e){
             logger.error("添加管理员失败"+e.getMessage());
-            return JSONString.getJSONString(re,"/suIndex/addManager");
+            return JSONString.getJSONString(msg,"/suIndex/addManager");
         }
 
     }
@@ -156,7 +206,7 @@ public class UserController {
             return JSONString.getJSONString(500,map);
         }catch (Exception e){
             logger.error("删除管理员失败"+e.getMessage());
-            return JSONString.getJSONString(re,"/suIndex/deleteManager");
+            return JSONString.getJSONString(msg,"/suIndex/deleteManager");
         }
 
     }

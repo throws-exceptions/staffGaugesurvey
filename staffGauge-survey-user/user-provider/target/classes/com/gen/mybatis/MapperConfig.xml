@@ -21,6 +21,7 @@
   </settings>
   <mappers>
     <mapper resource="com/staffGauge/survey/user/dal/persistence/UserMapper.xml" />
+    <mapper resource="com.staffGauge.survey.user.dal.persistence.UserCodeMapper"/>
   </mappers>
 
 </configuration>

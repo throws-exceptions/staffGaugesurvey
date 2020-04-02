@@ -7,6 +7,7 @@ import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
 
 
+import javax.validation.constraints.Email;
 import java.util.List;
 @Mapper
 public interface UserMapper extends TKMapper<User> {
@@ -17,7 +18,8 @@ public interface UserMapper extends TKMapper<User> {
                     @Param("salt")String salt,
                     @Param("headImgUrl") String headImgUrl,
                     @Param("phoneNumber")String phoneNumber,
-                    @Param("permission")String permission);
+                    @Param("permission")String permission,
+                    @Param("mail")String mail);
     Integer updateInformation(@Param("userName")String userName,
                    @Param("permission")String permission,
                    @Param("headImgUrl")String headImgUrl,

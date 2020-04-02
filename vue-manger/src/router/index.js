@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Login from '../components/Login.vue'
 import Index from '../components/Index'
+import Register from '../components/Register'
+import UserManager from '../components/Users/UserManager'
 
 Vue.use(VueRouter)
 
@@ -18,7 +20,12 @@ const router = new VueRouter({
     },
     {
       path: '/index',
-      component: Index
+      component: Index,
+      children: [{ path:'/user/manger',component: UserManager}]
+    },
+    {
+      path: '/register',
+      component: Register
     }
   ]
 })

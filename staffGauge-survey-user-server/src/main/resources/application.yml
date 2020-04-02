@@ -21,8 +21,33 @@ logging:
     classpath: logback.xml
 server:
   port: 8081
+  tomcat:
+    uri-encoding: UTF-8
 spring:
   redis:
     host: localhost
     port: 6379
     timeout: 3000
+  mail:
+    host: smtp.qq.com
+    username: 2067384295@qq.com
+    password: yrwrctisajzdfaje # 授权码
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+    default-encoding: utf-8
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+
+
+##邮箱服务器地址
+#QQ smtp.qq.com
+##sina smtp.sina.cn
+##aliyun smtp.aliyun.com
+##163 smtp.163.com
+
