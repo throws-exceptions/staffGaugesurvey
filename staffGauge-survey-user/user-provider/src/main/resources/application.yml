@@ -5,11 +5,23 @@ spring:
     password: 282818
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
-
+  devtools:
+    restart:
+      additional-paths: /mapper-[\\w-\\.]+jar , /pagehelper-[\\w-\\.]+jar
 mybatis:
   mapper-locations: classpath*:com/staffGauge/survey/user/dal/persistence/*.xml"
+#  type-aliases-package: com.staffGauge.survey.user.dao
   type-aliases-package: com.staffGauge.survey.user.dao
-
+mapper:
+  mappers:
+    - tk.mybatis.springboot.util.MyMapper
+  not-empty: false
+  identity: MYSQL
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
 dubbo:
   application:
     name: user-service

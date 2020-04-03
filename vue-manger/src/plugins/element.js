@@ -20,7 +20,9 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   Card,
-  Row} from 'element-ui'
+  Row,
+  Table,
+  TableColumn} from 'element-ui'
 
 Vue.use(Button)
 Vue.use(Form)
@@ -42,4 +44,6 @@ Vue.use(Breadcrumb)
 Vue.use(BreadcrumbItem)
 Vue.use(Card)
 Vue.use(Row)
+Vue.use(Table)
+Vue.use(TableColumn)
 Vue.prototype.$message = Message

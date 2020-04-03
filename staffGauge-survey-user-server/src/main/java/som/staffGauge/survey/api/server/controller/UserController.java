@@ -1,6 +1,7 @@
 package som.staffGauge.survey.api.server.controller;
 
 import com.auth0.jwt.internal.org.apache.commons.lang3.StringUtils;
+import com.github.pagehelper.PageInfo;
 import com.staffGauge.survey.user.api.ApiUserService;
 import com.staffGauge.survey.user.dao.User;
 import org.apache.dubbo.config.annotation.Reference;
@@ -160,6 +161,12 @@ public class UserController {
         String res=userService.getMenu(permission);
         if(StringUtils.isNotBlank(res))return res;
         else return JSONString.getJSONString(500,"获取列表失败！");
+    }
+    @RequestMapping("/getUserList")
+    @GetMapping
+    @ResponseBody
+    public PageInfo<User> getUserList(@RequestParam("pageNum") Integer pageNum,@Param("pageSize")Integer pageSize){
+        return userService.getUserList(pageNum,pageSize);
     }
     /**
      * 单点登录，通过调用直接返回用户信息给其他服务

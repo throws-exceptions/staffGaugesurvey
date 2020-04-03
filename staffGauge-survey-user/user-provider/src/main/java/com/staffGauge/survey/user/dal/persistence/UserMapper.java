@@ -1,5 +1,6 @@
 package com.staffGauge.survey.user.dal.persistence;
 
+import com.github.pagehelper.PageHelper;
 import com.staffGauge.survey.user.dao.User;
 import com.staffGauge.survey.user.tkmapper.TKMapper;
 import org.apache.ibatis.annotations.Mapper;
@@ -12,6 +13,7 @@ import java.util.List;
 @Mapper
 public interface UserMapper extends TKMapper<User> {
     List<User> selectUsers(@Param("permission")String permission);
+    List<User> selectAllUser();
     String selectPermissionByUserName(@Param("username")String username);
     Integer addUser(@Param("userName")String userName,
                     @Param("password")String password,
@@ -25,5 +27,7 @@ public interface UserMapper extends TKMapper<User> {
                    @Param("headImgUrl")String headImgUrl,
                    @Param("phoneNumber")String phoneNumber);
     User selectUserByName(@Param("username")String username);
+
+
 
 }

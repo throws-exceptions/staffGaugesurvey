@@ -1,6 +1,7 @@
 package som.staffGauge.survey.api.server.service;
 
 import com.alibaba.fastjson.JSONObject;
+import com.github.pagehelper.PageInfo;
 import com.staffGauge.survey.user.api.ApiUserService;
 import com.staffGauge.survey.user.dao.User;
 import org.apache.commons.lang3.StringUtils;
@@ -14,6 +15,7 @@ import som.staffGauge.survey.api.server.utils.Menu;
 import som.staffGauge.survey.api.server.utils.Utils;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -114,6 +116,20 @@ public class UserService {
             logger.info("用户写入验证码");
             apiUserService.insertCode(username,code);
         }
+    }
+
+    /**
+     * 分页查询用户列表
+     * @param pageNum
+     * @param pageSize
+     * @return
+     */
+    public PageInfo<User> getUserList(int pageNum, int pageSize) {
+        User user=new User();
+        user.setPage(pageNum);
+        user.setRows(pageSize);
+        List<User> userList = apiUserService.selectAllUsers(user);
+        return new PageInfo<User>(userList);
     }
 
     /**

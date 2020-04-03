@@ -10,9 +10,9 @@ import java.util.Map;
  */
 public interface ApiUserService {
     /**
-     * 查询所有用户列表,需要管理员权限，即A
+     * 分页，查询所有用户列表
      */
-    List<User> selectAllUsers();
+    List<User> selectAllUsers(User user);
     /**
      * 查询普通用户列表，普通用户权限即可B
      */

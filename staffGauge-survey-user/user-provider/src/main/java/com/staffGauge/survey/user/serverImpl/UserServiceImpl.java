@@ -1,5 +1,6 @@
 package com.staffGauge.survey.user.serverImpl;
 
+import com.github.pagehelper.PageHelper;
 import com.staffGauge.survey.user.api.ApiUserService;
 
 import com.staffGauge.survey.user.dal.persistence.UserCodeMapper;
@@ -33,11 +34,11 @@ public class UserServiceImpl implements ApiUserService {
     private UserCodeMapper userCodeMapper;
 
     @Override
-    public List<User> selectAllUsers() {
-        List<User> userList=userMapper.selectUsers("A");
-        List<User> userList1=userMapper.selectUsers("B");
-        userList.addAll(userList1);
-        return userList;
+    public List<User> selectAllUsers(User user) {
+        if (user.getPage() != null && user.getRows() != null) {
+            PageHelper.startPage(user.getPage(), user.getRows());
+        }
+        return userMapper.selectAllUser();
     }
 
     @Override

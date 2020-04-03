@@ -5,7 +5,7 @@ import javax.persistence.Table;
 import java.io.Serializable;
 
 @Table(schema = "tb_user")
-public class User implements Serializable {
+public class User extends BaseEntity implements Serializable {
     private static final long serialVersionUID = 8400162372112256792L;
     @Column(name = "user_id")
     private Integer userId;

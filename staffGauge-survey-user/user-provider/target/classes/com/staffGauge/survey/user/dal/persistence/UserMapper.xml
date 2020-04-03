@@ -18,7 +18,7 @@
     user_name,password,head_img_url,salt,phone_number,permission,mail
   </sql>
   <sql id="userInformation">
-    user_name,head_img_url,phone_number,permission
+    user_name,head_img_url,phone_number,permission,mail
   </sql>
 
 
@@ -34,7 +34,9 @@
     <select id="selectUserMail" resultType="java.lang.String" parameterType="java.lang.String">
         select mail from tb_user where user_name=#{username}
     </select>
-
+    <select id="selectAllUser" resultMap="BaseResultMap">
+        select <include refid="userInformation"></include> from tb_user
+    </select>
     <insert id="addUser">
         insert into tb_user (<include refid="BaseColumns"></include>)
         values (#{userName},#{password},#{headImgUrl},#{salt},#{phoneNumber},#{permission},#{mail})
