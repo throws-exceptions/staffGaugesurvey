@@ -2,29 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3d5e719-2627-48f7-97f7-77d7d3434bcf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-api/src/main/java/com/staffGauge/survey/user/dao/BaseEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user-server/src/main/java/som/staffGauge/survey/api/server/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user-server/src/main/java/som/staffGauge/survey/api/server/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user-server/src/main/java/som/staffGauge/survey/api/server/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user-server/src/main/java/som/staffGauge/survey/api/server/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user-server/target/classes/som/staffGauge/survey/api/server/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user-server/target/classes/som/staffGauge/survey/api/server/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user-server/target/classes/som/staffGauge/survey/api/server/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user-server/target/classes/som/staffGauge/survey/api/server/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-api/src/main/java/com/staffGauge/survey/user/api/ApiUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-api/src/main/java/com/staffGauge/survey/user/api/ApiUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-api/src/main/java/com/staffGauge/survey/user/dao/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-api/src/main/java/com/staffGauge/survey/user/dao/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-api/target/classes/com/staffGauge/survey/user/api/ApiUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-api/target/classes/com/staffGauge/survey/user/api/ApiUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-api/target/classes/com/staffGauge/survey/user/dao/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-api/target/classes/com/staffGauge/survey/user/dao/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/java/com/staffGauge/survey/user/dal/persistence/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/java/com/staffGauge/survey/user/dal/persistence/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/java/com/staffGauge/survey/user/dal/persistence/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/java/com/staffGauge/survey/user/dal/persistence/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/java/com/staffGauge/survey/user/serverImpl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/java/com/staffGauge/survey/user/serverImpl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/resources/com/gen/mybatis/MapperConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/resources/com/gen/mybatis/MapperConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/target/classes/com/gen/mybatis/MapperConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/target/classes/com/gen/mybatis/MapperConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/target/classes/com/staffGauge/survey/user/dal/persistence/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/target/classes/com/staffGauge/survey/user/dal/persistence/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/target/classes/com/staffGauge/survey/user/dal/persistence/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/target/classes/com/staffGauge/survey/user/dal/persistence/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/target/classes/com/staffGauge/survey/user/serverImpl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-user/user-provider/target/classes/com/staffGauge/survey/user/serverImpl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -334,13 +313,13 @@
     <list>
       <item itemvalue="Application.JSONString" />
       <item itemvalue="Application.MailService" />
+      <item itemvalue="Application.UserService" />
       <item itemvalue="Maven.mybatis-generator" />
       <item itemvalue="npm.serve" />
       <item itemvalue="Spring Boot.ServiceApplication" />
       <item itemvalue="Spring Boot.CargoServerApplication" />
       <item itemvalue="Spring Boot.UserServerApplication" />
       <item itemvalue="Spring Boot.UserProviderApplication" />
-      <item itemvalue="Application.UserService" />
     </list>
     <recent_temporary>
       <list>
@@ -418,6 +397,7 @@
       <workItem from="1585793344945" duration="816000" />
       <workItem from="1585794197407" duration="265000" />
       <workItem from="1585875481472" duration="9076000" />
+      <workItem from="1585958209964" duration="759000" />
     </task>
     <task id="LOCAL-00001" summary="2020.2.8">
       <created>1581152641638</created>
