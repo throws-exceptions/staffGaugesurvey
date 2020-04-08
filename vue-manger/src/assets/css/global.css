@@ -1,9 +1,20 @@
 /*全局样式*/
-html,body,#app{height: 100%;width: 100%;margin: 0;padding: 0}
-.el-breadcrumb{
+html, body, #app {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0
+}
+
+.el-breadcrumb {
     margin-bottom: 15px;
     font-size: 12px;
 }
-.el-card{
-    box-shadow: 0 1px 1px rgba(0,0,0,0.15) !important;
+
+.el-card {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
 }
+
+/*.el-table td {*/
+/*    padding: 0;*/
+/*}*/

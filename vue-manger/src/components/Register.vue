@@ -7,12 +7,14 @@
         <!--          <h3 class="title">水尺识别系统</h3>-->
       </div>
       <div>
-        <el-form class="register-form" ref="registerForm" :model="registerForm" :rules="registerRules" auto-complete="on" label-position="left">
+        <el-form class="register-form" ref="registerForm" :model="registerForm" :rules="registerRules"
+                 auto-complete="on" label-position="left">
           <el-form-item prop="mail">
-            <el-input v-model="email" prefix-icon="iconfont icon-mail_fill" placeholder="邮箱" />
+            <el-input v-model="registerForm.mail" prefix-icon="iconfont icon-mail_fill" placeholder="邮箱"/>
           </el-form-item>
           <el-form-item prop="username">
-            <el-input v-model="registerForm.username" prefix-icon="iconfont icon-people_fill" placeholder="用户名"></el-input>
+            <el-input v-model="registerForm.username" prefix-icon="iconfont icon-people_fill"
+                      placeholder="用户名"></el-input>
           </el-form-item>
           <el-form-item prop="password">
             <el-input
@@ -24,13 +26,19 @@
               @keyup.enter.native="handleregister"
             />
           </el-form-item>
-          <el-form-item  prop="verifyCode">
-            <el-input v-model="registerForm.Code" placeholder="验证码">
+          <el-form-item prop="verifyCode">
+            <el-input v-model="registerForm.Code" placeholder="验证码" class="code-input">
+
             </el-input>
+            <el-button class="code-button" type="primary"
+                       @click.native.prevent="sendCode" :disabled="this.codeButton.isDisabled">
+              {{this.codeButton.content}}
+            </el-button>
           </el-form-item>
-          <el-button style="width:100%;margin-bottom:30px;border-radius: 20px;" type="primary" @click.native.prevent="sendCode">发送验证码</el-button>
           <div style="height: 30px">
-            <el-button type="primary" style="width:100%;margin-bottom:30px;border-radius: 20px;" @click.native.prevent="handleRegister">注册</el-button>
+            <el-button type="primary" style="width:100%;margin-bottom:30px;border-radius: 20px;"
+                       @click.native.prevent="handleRegister">注册
+            </el-button>
           </div>
         </el-form>
       </div>
@@ -39,12 +47,12 @@
 </template>
 
 <script>
-export default {
-  name: 'Register',
-  data () {
-    return {
-      // 登录表单数据对象
-     registerForm: {
+  export default {
+    name: 'Register',
+    data() {
+      return {
+        // 登录表单数据对象
+        registerForm: {
           mail: '1163107972@qq.com',
           username: '傅杰青',
           password: '123456',
@@ -52,55 +60,77 @@ export default {
           verifyCode_status: false,
           isRemember: '0'
         },
-      email: "1163107972@qq.com",
-        serverCode: "",
+        codeButton: {
+          content: "发送验证码",
+          isDisabled: false,
+          time: 30
+        },
         registerRules: {
           mail: [
-            { required: true, message: '请输入邮箱地址', trigger: 'blur' },
-            { type: 'email', message: '请输入正确的邮箱地址', trigger: ['blur', 'change']}
+            {required: true, message: '请输入邮箱地址', trigger: 'blur'},
+            {type: 'email', message: '请输入正确的邮箱地址', trigger: ['blur', 'change']}
           ],
           username: [
-            { required: true, message: '请输入用户名!', trigger: 'blur' },
-            { min: 3, max: 10, message: '长度在 3 到 10 个字符', trigger: 'blur' }
+            {required: true, message: '请输入用户名!', trigger: 'blur'},
+            {min: 3, max: 10, message: '长度在 3 到 10 个字符', trigger: 'blur'}
           ],
           password: [
-            { required: true, message: '请输入密码!', trigger: 'blur' },
-            { min:6, message: '至少6个字符以上', trigger: 'blur' }
+            {required: true, message: '请输入密码!', trigger: 'blur'},
+            {min: 6, message: '至少6个字符以上', trigger: 'blur'}
           ]
         }
       }
     },
     methods: {
-      handleRegister () {
+      handleRegister() {
         this.$refs.registerForm.validate(async valid => {
           if (!valid) return
           const response = await this.$http.post('user/register', this.registerForm)
-          const { data: result } = response
+          const {data: result} = response
           if (result.code === 200) {
-            const { data: loginRes }=await this.$http.post('user/login', this.loginForm)
-            if(loginRes.code === 200){
-              window.sessionStorage.setItem('head',loginRes.head)
+            const {data: loginRes} = await this.$http.post('user/login', this.loginForm)
+            if (loginRes.code === 200) {
+              window.sessionStorage.setItem('head', loginRes.head)
               window.sessionStorage.setItem('token', loginRes.token_id)
-              window.sessionStorage.setItem('permission',loginRes.permission)
-              window.sessionStorage.setItem('username',loginRes.username)
+              window.sessionStorage.setItem('permission', loginRes.permission)
+              window.sessionStorage.setItem('username', loginRes.username)
               this.$message.success('注册成功')
-              this.$router.push({ path: '/index' })
-            }else {
+              this.$router.push({path: '/index'})
+            } else {
               this.$message.error('登录失败')
               this.$router.push('/login')
             }
           } else if (result.code === 500) return this.$message.error(result.msg)
-          else { return this.$message.info('服务器异常') }
+          else {
+            return this.$message.info('服务器异常')
+          }
         })
       },
-      sendCode () {
+      countDown() {
+        console.log("asdas")
+        this.codeButton.isDisabled = true
+        this.codeButton.content = this.codeButton.time + 's后重新发送'
+        let clock = window.setInterval(() => {
+          this.codeButton.time--
+          this.codeButton.content = this.codeButton.time + 's后重新发送'
+          if (this.codeButton.time < 0) {
+            window.clearInterval(clock)
+            this.codeButton.content = '重新发送验证码'
+            this.codeButton.time = 10
+            this.codeButton.isDisabled = false  //这里重新开启
+          }
+        }, 1000)
+      },
+      sendCode() {
         this.$refs.registerForm.validate(async valid => {
           if (!valid) return
+          if (this.codeButton.isDisabled) return
+          this.countDown()
           const response = await this.$http.post('user/verifyCode', this.registerForm)
-          const { data: res}=response
+          const {data: res} = response
           console.log(res)
-          if( res.code == 200)this.$message.success(res.msg)
-          else if(res.code) this.$message.error(res.msg)
+          if (res.code == 200) this.$message.success(res.msg)
+          else if (res.code) this.$message.error(res.msg)
           else this.$message.info(res.msg)
         })
       }
@@ -115,6 +145,7 @@ export default {
     width: 100%;
     height: 100%;
     background-color: #fff;
+
     img {
       height: 100%;
       width: 100%;
@@ -122,8 +153,10 @@ export default {
       vertical-align: middle;
       /*overflow: hidden;*/
     }
+
     /*overflow: hidden;*/
   }
+
   .register-box {
     /*position: relative;*/
     width: 400px;
@@ -138,6 +171,7 @@ export default {
     /*margin: 0 auto;*/
     /*overflow: hidden;*/
   }
+
   .tips {
     font-size: 26px;
     color: #f00;
@@ -149,6 +183,7 @@ export default {
       }
     }
   }
+
   .title-container {
     height: 130px;
     width: 130px;
@@ -161,7 +196,8 @@ export default {
     left: 50%;
     transform: translate(-50%, -50%);
     /*background-color: #fff;*/
-    img{
+
+    img {
       width: 100%;
       height: 100%;
       border-radius: 50%;
@@ -176,7 +212,8 @@ export default {
     /*  font-weight: bold;*/
     /*}*/
   }
-  .register-form{
+
+  .register-form {
     /*position: absolute;*/
     bottom: 0;
     width: 100%;
@@ -220,54 +257,39 @@ export default {
 <!--    border-radius: 50px;-->
 <!--  }-->
 <!--</style>-->
-<style lang="scss" scoped>
+<style scoped>
   /* 修复input 背景不协调 和光标变色 */
   /* Detail see https://github.com/PanJiaChen/vue-element-admin/pull/927 */
-
-  $bg:#fff;
-  $light_gray:#050505;
-  $cursor: #000;
-
-  @supports (-webkit-mask: none) and (not (cater-color: $cursor)) {
-    .register-container .el-input input {
-      color: $cursor;
-    }
-  }
-
   /* reset element-ui css */
   /*.register-container {*/
-  .el-input {
+  .register-form /deep/ .el-input__inner {
     display: inline-block;
     height: 47px;
-    width: 85%;
-    /*background-color: rgba(0,0,0,0.5);*/
-
-    input {
-      background: transparent;
-      border: 0px;
-      -webkit-appearance: none;
-      border-radius: 20px;
-      padding: 12px 5px 12px 15px;
-      color: $light_gray;
-      height: 47px;
-      caret-color: $cursor;
-
-      &:-webkit-autofill {
-        box-shadow: 0 0 0px 1000px $bg inset !important;
-        -webkit-text-fill-color: $cursor !important;
-      }
-    }
-  }
-
-  .el-form-item {
-    border: 1px solid;
+    width: 100%;
     background: rgba(255, 255, 255, 0.8);
-    border-radius: 50px;
-    /*color: #11ff22;*/
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    border-radius: 20px;
   }
-  .el-form-item__error{
-    padding-left: 30px;
-    color: orangered!important;
+
+  /*.el-form-item {*/
+  /*  border: 1px solid;*/
+  /*  background: rgba(255, 255, 255, 0.8);*/
+  /*  border-radius: 50px;*/
+  /*  !*color: #11ff22;*!*/
+  /*}*/
+
+  .register-form /deep/ .el-form-item__error {
+    padding-left: 22px;
+    color: red;
   }
+
+  .register-form /deep/ .code-input {
+    width: 50%;
+  }
+
+  .register-form /deep/ .code-button {
+    margin-left: 35px;
+  }
+
   /*}*/
 </style>

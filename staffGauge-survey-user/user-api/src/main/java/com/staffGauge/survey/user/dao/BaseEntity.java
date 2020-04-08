@@ -24,30 +24,25 @@
 
 package com.staffGauge.survey.user.dao;
 
-import javax.persistence.*;
-
-
 public class BaseEntity {
 
-    @Transient
-    private Integer page = 1;
+    private Integer pageNum;
 
-    @Transient
-    private Integer rows = 10;
+    private Integer pageSize;
 
-    public Integer getPage() {
-        return page;
+    public Integer getPageNum() {
+        return pageNum;
     }
 
-    public void setPage(Integer page) {
-        this.page = page;
+    public void setPageNum(Integer pageNum) {
+        this.pageNum = pageNum;
     }
 
-    public Integer getRows() {
-        return rows;
+    public Integer getPageSize() {
+        return pageSize;
     }
 
-    public void setRows(Integer rows) {
-        this.rows = rows;
+    public void setPageSize(Integer pageSize) {
+        this.pageSize = pageSize;
     }
 }

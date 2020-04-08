@@ -22,7 +22,8 @@ import {
   Card,
   Row,
   Table,
-  TableColumn} from 'element-ui'
+  TableColumn,
+  Pagination} from 'element-ui'
 
 Vue.use(Button)
 Vue.use(Form)
@@ -46,4 +47,5 @@ Vue.use(Card)
 Vue.use(Row)
 Vue.use(Table)
 Vue.use(TableColumn)
+Vue.use(Pagination)
 Vue.prototype.$message = Message

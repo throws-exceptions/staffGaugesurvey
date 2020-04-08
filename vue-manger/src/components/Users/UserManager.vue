@@ -4,63 +4,106 @@
       <el-breadcrumb-item :to="{ path: '/index' }">首页</el-breadcrumb-item>
       <el-breadcrumb-item>用户管理</el-breadcrumb-item>
     </el-breadcrumb>
-    <el-card class="box-card">
-      <el-row :gutter="30">
-        <el-col :span="30">
-          <el-form>
-          <el-form-item>
-              <el-input placeholder="请输入内容" style="border: 1px;border-radius: 50px!important;"></el-input>
-          </el-form-item>
-          </el-form>
-        </el-col>
-        <el-col :span="4">
-          <el-button type="primary" round>搜索用户</el-button>
-        </el-col>
-        <el-col :span="4">
-          <el-button type="primary" round>添加用户</el-button>
+    <el-card class="user-card">
+      <el-row :gutter="5" class="user-row">
+        <el-col :span="7">
+          <el-input placeholder="搜索用户名">
+            <el-button slot="append" icon="el-icon-search"></el-button>
+          </el-input>
         </el-col>
       </el-row>
-      <el-table :data="userList">
-        <el-table-column label="姓名" prop="userName"></el-table-column>
-        <el-table-column label="邮箱" prop="mail"></el-table-column>
-        <el-table-column label="电话" prop="phoneNumber"></el-table-column>
-        <el-table-column label="角色" prop="permission"></el-table-column>
-        <el-table-column label="操作"></el-table-column>
+      <el-table
+        :data="userList"
+        border
+        :default-sort="{prop: 'userName', order: 'Ascending'}">
+        <el-table-column
+          prop="userName"
+          label="姓名">
+        </el-table-column>
+        <el-table-column
+          prop="mail"
+          label="邮箱">
+        </el-table-column>
+        <el-table-column
+          prop="phoneNumber"
+          label="电话">
+        </el-table-column>
+        <el-table-column
+          prop="permissionName"
+          label="角色"
+          :formatter="isManager"
+          sortable
+          :sort-method="sortManager"
+        >
+        </el-table-column>
+        <el-table-column
+          label="操作">
+          <template>
+            <el-button type="text" size="small">升级权限</el-button>
+            <el-button type="text" size="small">降级权限</el-button>
+          </template>
+        </el-table-column>
       </el-table>
+      <el-pagination
+        @size-change="handleSizeChange"
+        @current-change="handleCurrentChange"
+        :current-page="queryInfo.pageNum"
+        :page-sizes="[1, 2, 5, 10]"
+        :page-size="queryInfo.pageSize"
+        layout="total, sizes, prev, pager, next, jumper"
+        :total="total">
+      </el-pagination>
     </el-card>
   </div>
 </template>
 
 <script>
-    export default {
-        name: "UserManager",
-        data() {
-          return {
-            queryInfo: {
-              pageNum: 1,
-              pageSize: 10
-            },
-            userList: [],
-            total: 0
-          }
+  export default {
+    name: "UserManager",
+    data() {
+      return {
+        queryInfo: {
+          //当前页数
+          pageNum: 1,
+          pageSize: 5
         },
-      created() {
-          this.getUserList()
+        userList: [],
+        total: 0,
+        permissionName: ''
+      }
+    },
+    created() {
+      this.getUserList()
+    },
+    methods: {
+      async getUserList() {
+        const {data: res} = await this.$http.get('user/getUserList', {params: this.queryInfo})
+        this.userList = res.list
+        this.total = res.total
+        console.log(this.userList)
       },
-      methods: {
-        async getUserList(){
-          const{data: res}=await this.$http.get('user/getUserList',{params:this.queryInfo})
-          console.log(res)
-          this.userList = res.list
-          console.log("liebiao")
-          console.log(this.userList)
-          this.total = res.total
-          console.log(this.total)
-        }
+      //监听pagesize改变的事件
+      handleSizeChange(newSize) {
+        this.queryInfo.pageSize = newSize
+        this.getUserList()
+      },
+      //监听page改变的事件
+      handleCurrentChange(newPage) {
+        this.queryInfo.pageNum = newPage
+        this.getUserList()
+      },
+      isManager(row, column) {
+        return row.permission === 'A' ? '管理员' : '普通用户'
+      },
+      sortManager(a, b) {
+        return a.permission === 'A' ? 1 : -1
       }
     }
+  }
 </script>
 
-<style lang="less" scoped>
-
+<style scoped>
+  .user-card /deep/ .user-row {
+    margin-bottom: 10px;
+  }
 </style>

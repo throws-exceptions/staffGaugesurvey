@@ -28,42 +28,43 @@ public abstract class LoginFilter implements Filter {
     public void init(FilterConfig filterConfig) throws ServletException {
 
     }
+
     //用缓存，防止每次都去请求中读取token
-    private static Cache<String,User> cache= CacheBuilder.newBuilder().maximumSize(10000).expireAfterWrite(3, TimeUnit.MINUTES).build();
+    private static Cache<String, User> cache = CacheBuilder.newBuilder().maximumSize(10000).expireAfterWrite(3, TimeUnit.MINUTES).build();
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         System.out.println("拦截器运行");
-        HttpServletRequest request=(HttpServletRequest)servletRequest;
-        HttpServletResponse response=(HttpServletResponse)servletResponse;
-        String token=request.getParameter("token");
-        if(StringUtils.isBlank(token)){
-            Cookie[] cookies=request.getCookies();
-            if(cookies!=null){
-                for(Cookie c:cookies){
-                    if(c.getName().equals("token")){
-                        token=c.getValue();
+        HttpServletRequest request = (HttpServletRequest) servletRequest;
+        HttpServletResponse response = (HttpServletResponse) servletResponse;
+        String token = request.getParameter("token");
+        if (StringUtils.isBlank(token)) {
+            Cookie[] cookies = request.getCookies();
+            if (cookies != null) {
+                for (Cookie c : cookies) {
+                    if (c.getName().equals("token")) {
+                        token = c.getValue();
                     }
                 }
             }
         }
-        User user=null;
-        if(StringUtils.isNotBlank(token)){
+        User user = null;
+        if (StringUtils.isNotBlank(token)) {
             cache.getIfPresent(token);
-            if(user==null) {
+            if (user == null) {
                 user = requestUser(token);
-                if(user!=null){
-                    cache.put(token,user);
+                if (user != null) {
+                    cache.put(token, user);
                 }
             }
         }
-        if(user==null){
+        if (user == null) {
             response.sendRedirect("http://user-service:8081/user/login");
             return;
         }
 
-        login(request,response,user);
-        filterChain.doFilter(request,response);
+        login(request, response, user);
+        filterChain.doFilter(request, response);
     }
 
     protected abstract void login(HttpServletRequest request, HttpServletResponse response, User user);
