@@ -2,26 +2,74 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="365299b8-812a-4bbb-b67b-da09cc945431" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vue-manger/src/assets/css/global.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manger/src/assets/logo_web.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manger/src/components/Index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manger/src/components/Login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manger/src/components/Register.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staffGauge-survey-cargo-server/src/main/java/com/staffGauge/survey/cargo/thrift/CargoServiceProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-manger" beforeDir="false" afterPath="$PROJECT_DIR$/vue-manger" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-manger/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-manger/.eslintrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-manger/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-manger/babel.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-manger/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-manger/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-manger/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-manger/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-manger/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-manger/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-manger/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-manger/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-manger/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-manger/src/views/About.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-manger/src/views/Home.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-manger/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/vue-manger/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vueAdmin-template" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-cargo-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-api/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-api/src/main/java/com/staffGauge/survey/cargo/api/ApiCargoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-api/src/main/java/com/staffGauge/survey/cargo/dao/Cargo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-api/target/classes/com/staffGauge/survey/cargo/api/ApiCargoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-api/target/classes/com/staffGauge/survey/cargo/dao/Cargo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/src/main/java/com/staffGauge/survey/cargo/dal/persistence/CargoMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/src/main/java/com/staffGauge/survey/cargo/dal/persistence/CargoMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/src/main/java/com/staffGauge/survey/cargo/tkmapper/TKMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/src/main/resources/com/gen/mybatis/MapperConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/src/main/resources/mybatis-generater.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/target/classes/com/gen/mybatis/MapperConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/target/classes/com/staffGauge/survey/cargo/dal/persistence/CargoMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/target/classes/com/staffGauge/survey/cargo/dal/persistence/CargoMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/target/classes/com/staffGauge/survey/cargo/tkmapper/TKMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/target/classes/mybatis-generater.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-device-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/staffGauge-survey-cargo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/.postcssrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/build/build.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/build/check-versions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/build/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/build/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/build/vue-loader.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/build/webpack.base.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/build/webpack.dev.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/build/webpack.prod.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/config/dev.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/config/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/config/prod.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/config/test.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/src/components/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/src/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/staffGauge-survey-fronted.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/static/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/test/e2e/custom-assertions/elementCount.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/test/e2e/nightwatch.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/test/e2e/runner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/test/e2e/specs/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/test/unit/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/test/unit/jest.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/test/unit/setup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/test/unit/specs/HelloWorld.spec.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,6 +90,7 @@
     <ignored path="$PROJECT_DIR$/staffGauge-survey-user-client/target/" />
     <ignored path="$PROJECT_DIR$/api-gateway-zuul/target/" />
     <ignored path="$PROJECT_DIR$/staffGauge-survey-cargo-server/target/" />
+    <ignored path="$PROJECT_DIR$/staffGauge-survey-device-server/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,13 +116,44 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue-manger/src/components/Index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="64" column="25" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+            <state relative-caret-position="1500">
+              <caret line="75" column="20" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/staffGauge-survey-cargo-server/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/staffGauge-survey-cargo-server/src/main/java/com/staffGauge/survey/cargo/thrift/CargoServiceProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/staffGauge-survey-device-server/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -86,8 +166,8 @@
         <option value="Enum" />
         <option value="HTML File" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Vue Single File Component" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -130,12 +210,11 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/vue-manger" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/staffGauge-survey-api-server/src/main/java/som/staffGauge/survey/api/server/redis/RedisClient.java" />
         <option value="$PROJECT_DIR$/staffGauge-survey-api-server/src/main/java/som/staffGauge/survey/api/server/service/UserService.java" />
         <option value="$PROJECT_DIR$/staffGauge-survey-api-server/src/main/java/som/staffGauge/survey/api/server/controller/UserController.java" />
         <option value="$PROJECT_DIR$/com-staffGauge-survey-user-client/pom.xml" />
@@ -153,7 +232,6 @@
         <option value="$PROJECT_DIR$/staffGauge-survey-cargo-server/src/main/java/com/staffGauge/survey/cargo/CargoServerApplication.java" />
         <option value="$PROJECT_DIR$/staffGauge-survey-user-server/pom.xml" />
         <option value="$PROJECT_DIR$/staffGauge-survey-user/user-provider/pom.xml" />
-        <option value="$PROJECT_DIR$/staffGauge-survey-cargo-server/pom.xml" />
         <option value="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/pom.xml" />
         <option value="$PROJECT_DIR$/api-gateway-zuul/pom.xml" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -186,6 +264,8 @@
         <option value="$PROJECT_DIR$/vue-manger/src/components/Login.vue" />
         <option value="$PROJECT_DIR$/vue-manger/src/plugins/element.js" />
         <option value="$PROJECT_DIR$/vue-manger/src/components/Index.vue" />
+        <option value="$PROJECT_DIR$/staffGauge-survey-cargo-server/pom.xml" />
+        <option value="$PROJECT_DIR$/staffGauge-survey-cargo-server/src/main/java/com/staffGauge/survey/cargo/thrift/CargoServiceProvider.java" />
       </list>
     </option>
   </component>
@@ -202,10 +282,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="676" />
-    <option name="width" value="697" />
-    <option name="height" value="735" />
+    <option name="width" value="691" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -218,6 +298,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,11 +306,80 @@
               <item name="staffGaugesurvey" type="b2602c69:ProjectViewProjectNode" />
               <item name="毕设" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="staffGaugesurvey" type="b2602c69:ProjectViewProjectNode" />
+              <item name="毕设" type="462c0819:PsiDirectoryNode" />
+              <item name="staffGauge-survey-cargo-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="staffGaugesurvey" type="b2602c69:ProjectViewProjectNode" />
+              <item name="毕设" type="462c0819:PsiDirectoryNode" />
+              <item name="staffGauge-survey-cargo-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="staffGaugesurvey" type="b2602c69:ProjectViewProjectNode" />
+              <item name="毕设" type="462c0819:PsiDirectoryNode" />
+              <item name="staffGauge-survey-cargo-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="staffGaugesurvey" type="b2602c69:ProjectViewProjectNode" />
+              <item name="毕设" type="462c0819:PsiDirectoryNode" />
+              <item name="staffGauge-survey-cargo-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="staffGaugesurvey" type="b2602c69:ProjectViewProjectNode" />
+              <item name="毕设" type="462c0819:PsiDirectoryNode" />
+              <item name="staffGauge-survey-cargo-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cargo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="staffGaugesurvey" type="b2602c69:ProjectViewProjectNode" />
+              <item name="毕设" type="462c0819:PsiDirectoryNode" />
+              <item name="staffGauge-survey-device-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="staffGaugesurvey" type="b2602c69:ProjectViewProjectNode" />
+              <item name="毕设" type="462c0819:PsiDirectoryNode" />
+              <item name="staffGauge-survey-device-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="staffGaugesurvey" type="b2602c69:ProjectViewProjectNode" />
+              <item name="毕设" type="462c0819:PsiDirectoryNode" />
+              <item name="staffGauge-survey-device-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="staffGaugesurvey" type="b2602c69:ProjectViewProjectNode" />
+              <item name="毕设" type="462c0819:PsiDirectoryNode" />
+              <item name="staffGauge-survey-device-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="staffGaugesurvey" type="b2602c69:ProjectViewProjectNode" />
+              <item name="毕设" type="462c0819:PsiDirectoryNode" />
+              <item name="staffGauge-survey-device-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="device" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -244,7 +394,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/vue-manger" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -258,16 +408,15 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="ts.external.directory.path" value="D:\IntelliJ IDEA 2019.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\毕设\vue-manger\src\utils" />
-      <recent name="D:\毕设\vue-manger\src\icons\svg" />
-      <recent name="D:\毕设\vue-manger\src\components" />
-      <recent name="D:\毕设\vue-manger\src\icons" />
-      <recent name="D:\毕设\staffGauge-survey-api-server\src\main\java\som\staffGauge\survey\api\server\redis" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\毕设\vue-manger\src\assets" />
+      <recent name="D:\毕设\staffGauge-survey-fronted" />
+      <recent name="D:\毕设\staffGauge-survey-fronted\src" />
+      <recent name="D:\毕设\staffGauge-survey-fronted\src\components" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.staffGauge.survey.cargo.dao" />
@@ -276,11 +425,12 @@
       <recent name="com.staffGauge.survey.user.cont" />
       <recent name="com.staffGauge.survey.user" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\毕设\vue-manger\src\assets" />
-      <recent name="D:\毕设\staffGauge-survey-fronted" />
-      <recent name="D:\毕设\staffGauge-survey-fronted\src" />
-      <recent name="D:\毕设\staffGauge-survey-fronted\src\components" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\毕设" />
+      <recent name="D:\毕设\vue-manger\src\utils" />
+      <recent name="D:\毕设\vue-manger\src\icons\svg" />
+      <recent name="D:\毕设\vue-manger\src\components" />
+      <recent name="D:\毕设\vue-manger\src\icons" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -295,7 +445,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.serve">
+  <component name="RunManager" selected="Spring Boot.UserProviderApplication">
     <configuration name="UserServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.staffGauge.survey.user.serverImpl.UserServiceImpl" />
       <module name="user-provider" />
@@ -466,8 +616,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.UserServerApplication" />
         <item itemvalue="Spring Boot.UserProviderApplication" />
+        <item itemvalue="Spring Boot.UserServerApplication" />
         <item itemvalue="Application.Utils" />
         <item itemvalue="Application.UserServiceImpl" />
       </list>
@@ -518,7 +668,11 @@
       <workItem from="1585355082178" duration="26369000" />
       <workItem from="1585402728070" duration="2792000" />
       <workItem from="1585443479384" duration="5729000" />
-      <workItem from="1585466969034" duration="945000" />
+      <workItem from="1585466969034" duration="4254000" />
+      <workItem from="1585548316760" duration="352000" />
+      <workItem from="1585797246228" duration="717000" />
+      <workItem from="1586220447423" duration="1188000" />
+      <workItem from="1587352926476" duration="3371000" />
     </task>
     <task id="LOCAL-00001" summary="2020.2.8">
       <created>1581152641638</created>
@@ -531,12 +685,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="309574000" />
+    <option name="totallyTimeSpent" value="318511000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="676" y="0" width="691" height="745" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49512196" visible="true" weight="0.1785174" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49512196" visible="true" weight="0.39302695" />
       <window_info id="Structure" order="1" sideWeight="0.50487804" side_tool="true" weight="0.20272315" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -546,13 +700,13 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32786885" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5133438" weight="0.38935107" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5133438" weight="0.39443535" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39836067" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.34590164" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3451613" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.4866562" side_tool="true" weight="0.3294509" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3289689" />
@@ -563,7 +717,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.18456884" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.38170347" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -629,107 +783,17 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-            <element signature="e#99#133#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/store/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/store/modules/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-725" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/store/modules/settings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/views/dashboard/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/settings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/store/modules/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-220">
-          <caret line="35" column="59" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/icons/svg/password.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/components/SvgIcon/index.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueAdmin-template/build/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/icons/svg/dashboard.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/icons/svgo.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/icons/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/router/index.js" />
+    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/store/modules/user.js" />
+    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/icons/svg/password.svg" />
+    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/components/SvgIcon/index.vue" />
+    <entry file="file://$PROJECT_DIR$/vueAdmin-template/build/index.js" />
+    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/icons/svg/dashboard.svg" />
+    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/icons/svgo.yml" />
+    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/icons/index.js" />
     <entry file="file://$PROJECT_DIR$/vue-manger/src/icons/svg/user.svg" />
     <entry file="file://$PROJECT_DIR$/vue-manger/src/icons/svgo.yml" />
-    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/utils/validate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/utils/validate.js" />
     <entry file="file://$PROJECT_DIR$/vue-manger/src/utils/validate.js" />
     <entry file="file://$PROJECT_DIR$/vue-manger/src/icons/index.js" />
     <entry file="file://$PROJECT_DIR$/vue-manger/src/components/SvgIcon/index.vue" />
@@ -741,19 +805,7 @@
     <entry file="file://$PROJECT_DIR$/vue-manger/src/assets/icons/demo_index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/views/register/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="166" column="5" selection-start-line="166" selection-start-column="5" selection-end-line="166" selection-end-column="5" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#el-form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#el-checkbox#0;n#div#1;n#el-form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#el-form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#el-button#0;n#div#2;n#el-form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/views/register/index.vue" />
     <entry file="file://$PROJECT_DIR$/vue-manger/node_modules/vue/types/vue.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
@@ -761,11 +813,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vueAdmin-template/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6960" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vueAdmin-template/package-lock.json" />
     <entry file="file://$PROJECT_DIR$/staffGauge-survey-user-server/src/main/java/som/staffGauge/survey/api/server/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-186">
@@ -773,13 +821,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vueAdmin-template/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vueAdmin-template/package.json" />
     <entry file="file://$PROJECT_DIR$/vue-manger/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -787,20 +829,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/views/login/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-760">
-          <caret line="127" column="15" lean-forward="true" selection-start-line="127" selection-start-column="15" selection-end-line="127" selection-end-column="15" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#el-form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#el-checkbox#0;n#div#1;n#el-form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#el-form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#el-button#0;n#div#2;n#el-form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#el-button#1;n#div#2;n#el-form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vueAdmin-template/src/views/login/index.vue" />
     <entry file="file://$PROJECT_DIR$/vue-manger/.eslintrc.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -808,9 +837,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vueAdmin-template/postcss.config.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vueAdmin-template/postcss.config.js" />
     <entry file="file://$PROJECT_DIR$/vue-manger/src/components/Register.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -838,13 +865,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vueAdmin-template/node_modules/element-ui/packages/input/src/input.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="117" column="4" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vueAdmin-template/node_modules/element-ui/packages/input/src/input.vue" />
     <entry file="file://$PROJECT_DIR$/vue-manger/src/assets/icons/iconfont.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -910,6 +931,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vue-manger/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="111">
+            <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-manger/.gitignore" />
     <entry file="file://$PROJECT_DIR$/vue-manger/src/components/Login.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
@@ -922,22 +954,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue-manger/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="111">
-            <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/vue-manger/src/components/Index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1500">
+          <caret line="75" column="20" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue-manger/src/components/Index.vue">
+    <entry file="file://$PROJECT_DIR$/settings.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo-dependencies-bom/2.7.3/dubbo-dependencies-bom-2.7.3.pom">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="64" column="25" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+        <state relative-caret-position="113">
+          <caret line="248" column="26" lean-forward="true" selection-start-line="248" selection-start-column="26" selection-end-line="248" selection-end-column="26" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staffGauge-survey-cargo-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staffGauge-survey-cargo-server/src/main/java/com/staffGauge/survey/cargo/thrift/CargoServiceProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staffGauge-survey-device-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
@@ -990,7 +1042,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>staffGauge-survey-user-client</last-edited>
+          <last-edited>vue-manger</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

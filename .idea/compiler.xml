@@ -6,18 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cargo-provider" />
+        <module name="staffGauge-survey-device-server" />
         <module name="user-provider" />
         <module name="user-api" />
         <module name="staffGauge-survey-user-server" />
         <module name="staffGauge-survey-dubbo-cargo-server" />
-        <module name="cargo-api" />
         <module name="staffGauge-survey-cargo-server" />
         <module name="staffGauge-survey-user-client" />
         <module name="api-gateway-zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cargo-api" target="1.8" />
+      <module name="cargo-provider" target="1.8" />
+      <module name="staffGauge-survey-cargo" target="1.8" />
       <module name="staffGauge-survey-dubbo-cargo-server" target="1.8" />
       <module name="staffGauge-survey-dubbo-server" target="1.8" />
       <module name="staffGauge-survey-dubbo-user-server" target="1.8" />
@@ -31,6 +33,7 @@
       <module name="cargo-provider" options="-parameters" />
       <module name="staffGauge-survey-cargo" options="-parameters" />
       <module name="staffGauge-survey-cargo-server" options="-parameters" />
+      <module name="staffGauge-survey-device-server" options="-parameters" />
       <module name="staffGauge-survey-dubbo-cargo-server" options="-parameters" />
       <module name="staffGauge-survey-dubbo-server" options="-parameters" />
       <module name="staffGauge-survey-dubbo-user-server" options="-parameters" />

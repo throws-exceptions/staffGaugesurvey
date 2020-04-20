@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/staffGauge-survey-dubbo-server/staffGauge-survey-dubbo-cargo-server/staffGauge-survey-dubbo-cargo-server.iml" filepath="$PROJECT_DIR$/staffGauge-survey-dubbo-server/staffGauge-survey-dubbo-cargo-server/staffGauge-survey-dubbo-cargo-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/staffGauge-survey-fronted/staffGauge-survey-fronted.iml" filepath="$PROJECT_DIR$/staffGauge-survey-fronted/staffGauge-survey-fronted.iml" />
       <module fileurl="file://$PROJECT_DIR$/vue-manger/vue-manger.iml" filepath="$PROJECT_DIR$/vue-manger/vue-manger.iml" />
     </modules>
   </component>

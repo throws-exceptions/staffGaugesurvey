@@ -16,6 +16,7 @@
         <module>staffGauge-survey-user-client</module>
         <module>api-gateway-zuul</module>
         <module>staffGauge-survey-cargo-server</module>
+        <module>staffGauge-survey-device-server</module>
 
     </modules>
     <parent>

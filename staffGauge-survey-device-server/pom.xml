@@ -9,12 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>staffGauge-survey-cargo</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>cargo-api</module>
-        <module>cargo-provider</module>
-    </modules>
+    <artifactId>staffGauge-survey-device-server</artifactId>
 
 
 </project>
