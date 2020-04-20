@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.staffGauge.survey.user.dal.persistence.ToDoListMapper">
+    <resultMap id="BaseResultMap" type="com.staffGauge.survey.user.dao.ToDoList">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <result column="event_date" jdbcType="VARCHAR" property="date"/>
+        <result column="event_title" jdbcType="VARCHAR" property="title"/>
+        <result column="event_desc" jdbcType="VARCHAR" property="desc"/>
+    </resultMap>
+    <sql id="BaseColumns">
+    username,event_date,event_title,event_desc
+  </sql>
+    <select id="selectToDoLists" resultMap="BaseResultMap" parameterType="java.lang.String">
+        select username,DATE_FORMAT(event_date,"%Y/%m/%d") as event_date,event_title,event_desc
+        from tb_todolist where username=#{username}
+    </select>
+    <insert id="insertToDoList">
+        insert into tb_todolist (<include refid="BaseColumns"></include>)
+        values (#{username},#{eventDate},#{eventTitle},#{eventDesc})
+    </insert>
+    <update id="updateToDoList">
+        update tb_todolist
+        <set>
+            event_desc=#{eventDesc}
+        </set>
+        where username=#{username} and event_title=#{eventTitle} and event_date=#{eventDate}
+
+    </update>
+    <delete id="deleteToDoList">
+        delete from tb_todolist
+        where username=#{username} and event_title=#{eventTitle} and event_date=#{eventDate} and event_desc=#{eventDesc}
+
+    </delete>
+
+
+</mapper>

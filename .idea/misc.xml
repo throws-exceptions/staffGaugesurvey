@@ -19,10 +19,11 @@
         <option value="$PROJECT_DIR$/staffGauge-survey-dubbo-server/pom.xml" />
         <option value="$PROJECT_DIR$/staffGauge-survey-dubbo-server/staffGauge-survey-dubbo-cargo-server/pom.xml" />
         <option value="$PROJECT_DIR$/staffGauge-survey-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/untitled/pom.xml" />
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

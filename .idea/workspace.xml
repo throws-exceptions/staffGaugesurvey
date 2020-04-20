@@ -2,74 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="365299b8-812a-4bbb-b67b-da09cc945431" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staffGauge-survey-cargo-server/src/main/java/com/staffGauge/survey/cargo/thrift/CargoServiceProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-cargo-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-api/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-api/src/main/java/com/staffGauge/survey/cargo/api/ApiCargoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-api/src/main/java/com/staffGauge/survey/cargo/dao/Cargo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-api/target/classes/com/staffGauge/survey/cargo/api/ApiCargoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-api/target/classes/com/staffGauge/survey/cargo/dao/Cargo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/src/main/java/com/staffGauge/survey/cargo/dal/persistence/CargoMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/src/main/java/com/staffGauge/survey/cargo/dal/persistence/CargoMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/src/main/java/com/staffGauge/survey/cargo/tkmapper/TKMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/src/main/resources/com/gen/mybatis/MapperConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/src/main/resources/mybatis-generater.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/target/classes/com/gen/mybatis/MapperConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/target/classes/com/staffGauge/survey/cargo/dal/persistence/CargoMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/target/classes/com/staffGauge/survey/cargo/dal/persistence/CargoMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/target/classes/com/staffGauge/survey/cargo/tkmapper/TKMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/target/classes/mybatis-generater.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/staffGauge-survey-device-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-cargo/staffGauge-survey-cargo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/.babelrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/.eslintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/.postcssrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/build/build.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/build/check-versions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/build/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/build/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/build/vue-loader.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/build/webpack.base.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/build/webpack.dev.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/build/webpack.prod.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/config/dev.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/config/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/config/prod.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/config/test.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/src/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/src/components/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/src/router/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/staffGauge-survey-fronted.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/static/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/test/e2e/custom-assertions/elementCount.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/test/e2e/nightwatch.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/test/e2e/runner.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/test/e2e/specs/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/test/unit/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/test/unit/jest.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/test/unit/setup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffGauge-survey-fronted/test/unit/specs/HelloWorld.spec.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -283,8 +216,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="676" />
-    <option name="width" value="691" />
+    <option name="x" value="673" />
+    <option name="width" value="694" />
     <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -375,6 +308,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="device" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="staffGaugesurvey" type="b2602c69:ProjectViewProjectNode" />
+              <item name="毕设" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-manger" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="staffGaugesurvey" type="b2602c69:ProjectViewProjectNode" />
+              <item name="毕设" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-manger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="staffGaugesurvey" type="b2602c69:ProjectViewProjectNode" />
+              <item name="毕设" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-manger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -672,7 +623,7 @@
       <workItem from="1585548316760" duration="352000" />
       <workItem from="1585797246228" duration="717000" />
       <workItem from="1586220447423" duration="1188000" />
-      <workItem from="1587352926476" duration="3371000" />
+      <workItem from="1587352926476" duration="3997000" />
     </task>
     <task id="LOCAL-00001" summary="2020.2.8">
       <created>1581152641638</created>
@@ -685,12 +636,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="318511000" />
+    <option name="totallyTimeSpent" value="319137000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="676" y="0" width="691" height="745" extended-state="0" />
+    <frame x="-8" y="-8" width="1376" height="754" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49512196" visible="true" weight="0.39302695" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49512196" visible="true" weight="0.18844984" />
       <window_info id="Structure" order="1" sideWeight="0.50487804" side_tool="true" weight="0.20272315" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -706,12 +657,12 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3451613" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33870968" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.4866562" side_tool="true" weight="0.3294509" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32903227" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.32786885" />
       <window_info anchor="bottom" id="TypeScript" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -766,6 +717,32 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2020.2.8" />

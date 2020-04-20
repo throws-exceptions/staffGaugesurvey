@@ -1,5 +1,36 @@
 import Vue from 'vue'
-import { Button, Form, FormItem, Input, Checkbox, Message, DropdownMenu, DropdownItem, Dropdown, Container, Header, Aside, Main, Menu, Submenu, MenuItem } from 'element-ui'
+import {
+  Aside,
+  Avatar,
+  Breadcrumb,
+  BreadcrumbItem,
+  Button,
+  Card,
+  Checkbox,
+  Col,
+  Container,
+  DatePicker,
+  Dialog,
+  Dropdown,
+  DropdownItem,
+  DropdownMenu,
+  Form,
+  FormItem,
+  Header,
+  Input,
+  Main,
+  Menu,
+  MenuItem,
+  Message,
+  Pagination,
+  Row,
+  Step,
+  Steps,
+  Submenu,
+  Table,
+  TableColumn,
+  Upload
+} from 'element-ui'
 
 Vue.use(Button)
 Vue.use(Form)
@@ -16,4 +47,18 @@ Vue.use(Main)
 Vue.use(Menu)
 Vue.use(Submenu)
 Vue.use(MenuItem)
+Vue.use(Col)
+Vue.use(Breadcrumb)
+Vue.use(BreadcrumbItem)
+Vue.use(Card)
+Vue.use(Row)
+Vue.use(Table)
+Vue.use(TableColumn)
+Vue.use(Pagination)
+Vue.use(Dialog)
+Vue.use(DatePicker)
+Vue.use(Avatar)
+Vue.use(Upload)
+Vue.use(Steps)
+Vue.use(Step)
 Vue.prototype.$message = Message
