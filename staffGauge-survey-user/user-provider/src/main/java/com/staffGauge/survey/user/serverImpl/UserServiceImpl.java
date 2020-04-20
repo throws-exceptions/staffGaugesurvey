@@ -7,7 +7,6 @@ import com.staffGauge.survey.user.dal.persistence.UserCodeMapper;
 import com.staffGauge.survey.user.dal.persistence.UserMapper;
 import com.staffGauge.survey.user.dao.User;
 import com.staffGauge.survey.user.utils.Utils;
-import org.apache.commons.lang3.StringUtils;
 import org.apache.dubbo.config.annotation.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -80,7 +79,7 @@ public class UserServiceImpl implements ApiUserService {
         String managerPermission = userMapper.selectPermissionByUserName(admin);
         if (managerPermission.equals("A")) {
             try {
-                userMapper.updateInformation(username, permission, null, null);
+                userMapper.updateInformation(username, null, permission, null, null, null);
                 logger.debug("修改权限成功");
                 return true;
             } catch (Exception e) {
@@ -92,14 +91,10 @@ public class UserServiceImpl implements ApiUserService {
 
 
     @Override
-    public boolean updateUser(String userName, String headImgUrl, String phoneNumber) {
+    public boolean updateUser(String oldUsername, String newUsername, String headImgUrl, String phoneNumber, String mail) {
 
-        if (StringUtils.isBlank(userName)) {
-            logger.error("当前用户未登录");
-            return false;
-        }
         try {
-            userMapper.updateInformation(userName, null, headImgUrl, phoneNumber);
+            userMapper.updateInformation(oldUsername, newUsername, null, headImgUrl, phoneNumber, mail);
             logger.debug("更新用户信息成功");
             return true;
         } catch (Exception e) {

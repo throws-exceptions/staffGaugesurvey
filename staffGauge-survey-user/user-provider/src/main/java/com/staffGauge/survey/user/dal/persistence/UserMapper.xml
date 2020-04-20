@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.staffGauge.survey.user.dal.persistence.UserMapper">
-  <resultMap id="BaseResultMap" type="com.staffGauge.survey.user.dao.User">
-    <!--
-      WARNING - @mbg.generated
-    -->
-    <result column="user_id" jdbcType="INTEGER" property="userId" />
-    <result column="user_name" jdbcType="VARCHAR" property="userName" />
-    <result column="password" jdbcType="VARCHAR" property="password" />
-    <result column="head_img_url" jdbcType="VARCHAR" property="headImgUrl" />
-    <result column="salt" jdbcType="VARCHAR" property="salt" />
-    <result column="phone_number" jdbcType="VARCHAR" property="phoneNumber" />
-    <result column="permission" jdbcType="VARCHAR" property="permission" />
-      <result column="mail" jdbcType="VARCHAR" property="mail"/>
-  </resultMap>
-  <sql id="BaseColumns">
+    <resultMap id="BaseResultMap" type="com.staffGauge.survey.user.dao.User">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <result column="user_id" jdbcType="INTEGER" property="userId"/>
+        <result column="user_name" jdbcType="VARCHAR" property="userName"/>
+        <result column="password" jdbcType="VARCHAR" property="password"/>
+        <result column="head_img_url" jdbcType="VARCHAR" property="headImgUrl"/>
+        <result column="salt" jdbcType="VARCHAR" property="salt"/>
+        <result column="phone_number" jdbcType="VARCHAR" property="phoneNumber"/>
+        <result column="permission" jdbcType="VARCHAR" property="permission"/>
+        <result column="mail" jdbcType="VARCHAR" property="mail"/>
+    </resultMap>
+    <sql id="BaseColumns">
     user_name,password,head_img_url,salt,phone_number,permission,mail
   </sql>
-  <sql id="userInformation">
+    <sql id="userInformation">
     user_name,head_img_url,phone_number,permission,mail
   </sql>
 
 
-    <select id="selectUsers" resultMap="BaseResultMap" parameterType="java.lang.String" >
-    select <include refid="userInformation"></include> from tb_user where permission=#{permission}
+    <select id="selectUsers" resultMap="BaseResultMap" parameterType="java.lang.String">
+        select <include refid="userInformation"></include> from tb_user where permission=#{permission}
     </select>
     <select id="selectPermissionByUserName" resultType="java.lang.String">
         select permission from tb_user where user_name=#{username}
@@ -44,17 +44,23 @@
     <update id="updateInformation">
         update tb_user
         <set>
+            <if test="newUsername != null">
+                user_name=#{newUsername},
+            </if>
             <if test="headImgUrl != null">
                 head_img_url=#{headImgUrl},
             </if>
             <if test="phoneNumber != null">
                 phoneNumber=#{phoneNumber},
             </if>
+            <if test="mail != null">
+                mail=#{mail},
+            </if>
             <if test="permission !=null">
                 permission=#{permission},
             </if>
         </set>
-        where user_name=#{userName}
+        where user_name=#{oldUsername}
 
     </update>
 

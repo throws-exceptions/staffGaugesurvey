@@ -7,8 +7,8 @@
     <el-card class="user-card">
       <el-row :gutter="5" class="user-row">
         <el-col :span="7">
-          <el-input placeholder="搜索用户名">
-            <el-button slot="append" icon="el-icon-search"></el-button>
+          <el-input placeholder="搜索用户名" clearable @clear="getUserList" v-model="queryInfo.query">
+            <el-button slot="append" icon="el-icon-search" @click="getUserList"></el-button>
           </el-input>
         </el-col>
       </el-row>
@@ -16,6 +16,7 @@
         :data="userList"
         border
         :default-sort="{prop: 'userName', order: 'Ascending'}">
+        <el-table-column type="index" label="#"></el-table-column>
         <el-table-column
           prop="userName"
           label="姓名">
@@ -63,6 +64,8 @@
     data() {
       return {
         queryInfo: {
+          //查询数据
+          query: '',
           //当前页数
           pageNum: 1,
           pageSize: 5

@@ -39,7 +39,7 @@ public interface ApiUserService {
     /**
      * 更新用户信息，id不可改,权限不可改
      */
-    boolean updateUser(String userName, String headImgUrl, String phoneNumber);
+    boolean updateUser(String oldUsername, String newUsername, String headImgUrl, String phoneNumber, String mail);
     /**
      * 找回密码功能暂定
      */

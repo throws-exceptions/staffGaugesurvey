@@ -23,10 +23,12 @@ public interface UserMapper extends TKMapper<User> {
                     @Param("permission") String permission,
                     @Param("mail") String mail);
 
-    Integer updateInformation(@Param("userName") String userName,
+    Integer updateInformation(@Param("oldUsername") String oldUsername,
+                              @Param("newUsername") String newUsername,
                               @Param("permission") String permission,
                               @Param("headImgUrl") String headImgUrl,
-                              @Param("phoneNumber") String phoneNumber);
+                              @Param("phoneNumber") String phoneNumber,
+                              @Param("mail") String mail);
 
     User selectUserByName(@Param("username") String username);
 

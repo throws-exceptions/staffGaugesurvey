@@ -5,6 +5,10 @@ import './plugins/element.js'
 import './assets/css/global.css'
 import './assets/icons/iconfont.css'
 import axios from 'axios'
+import 'vue-event-calendar/dist/style.css'
+import vueEventCalendar from 'vue-event-calendar'
+
+Vue.use(vueEventCalendar, {locale: 'zh', color: '#ffc09f'})
 
 axios.defaults.baseURL = 'http://localhost:8081/'
 Vue.prototype.$http = axios

@@ -78,11 +78,12 @@ public class UserService {
         } else return "";
     }
 
-    public Map<String, Object> getUserInfo(String username, String password) {
+    public Map<String, Object> getUserInfo(String username) {
         Map<String, Object> map = new ConcurrentHashMap<>();
         User user = apiUserService.selectUserByName(username);
         map.put("username", username);
         map.put("head", user.getHeadImgUrl());
+        map.put("mail", user.getMail());
         map.put("permission", user.getPermission());
         return map;
     }
