@@ -1,34 +1,41 @@
 <template>
   <el-container class="home-el-container">
     <el-header>
-      <el-menu
-        background-color="#fff"
-        text-color="#000"
-        :default-active="activePath"
-        active-text-color="blue"
-        :collapse="isCollapse"
-        :collapse-transition="false"
-        router
-        mode="horizontal">
-        <!--                  一级菜单-->
-        <el-menu-item :index="item.path + ''" v-for="item in menulist" :key="item.id"
-                      @click="saveNavStatus(item.path)">
-          <!--                  一级菜单模板区域-->
-          <i :class="icon[item.id]"></i>
-          <template slot="title">
-            <!--                    一级菜单图标-->
-            <!--                    一级菜单文本-->
-            <span>{{item.authName}}</span>
-          </template>
-          <!--                  二级菜单-->
-          <!--                  <el-menu-item :index="subItem.id + ''" v-for="subItem in item.children"-->
-          <!--                  :key="subItem.id">-->
-          <!--                    <template slot="title">-->
-          <!--                      <span>{{subItem.authName}}</span>-->
-          <!--                    </template>-->
-          <!--                  </el-menu-item>-->
-        </el-menu-item>
-      </el-menu>
+      <el-dropdown trigger="click">
+            <span class="el-dropdown-link">
+              水尺识别系统<i class="el-icon-s-unfold"></i>
+            </span>
+        <el-dropdown-menu slot="dropdown">
+          <el-menu
+            background-color="#fff"
+            text-color="#000"
+            :default-active="activePath"
+            active-text-color="blue"
+            :collapse="isCollapse"
+            :collapse-transition="false"
+            router
+          >
+            <!--                  一级菜单-->
+            <el-menu-item :index="item.path + ''" v-for="item in menulist" :key="item.id">
+              <!--                  一级菜单模板区域-->
+              <i :class="icon[item.id]"></i>
+              <template slot="title">
+                <!--                    一级菜单图标-->
+                <!--                    一级菜单文本-->
+                <span>{{item.authName}}</span>
+              </template>
+              <!--                  二级菜单-->
+              <!--                  <el-menu-item :index="subItem.id + ''" v-for="subItem in item.children"-->
+              <!--                  :key="subItem.id">-->
+              <!--                    <template slot="title">-->
+              <!--                      <span>{{subItem.authName}}</span>-->
+              <!--                    </template>-->
+              <!--                  </el-menu-item>-->
+            </el-menu-item>
+          </el-menu>
+        </el-dropdown-menu>
+      </el-dropdown>
+
       <el-dropdown>
             <span class="el-dropdown-link">
               <i><img :src='this.headUrl'></i>
@@ -97,10 +104,6 @@
       toggleCollapse() {
         console.log(this.isCollapse)
         this.isCollapse = !this.isCollapse
-      },
-      saveNavStatus(activePath) {
-        window.sessionStorage.setItem("activePath", activePath)
-        this.activePath = activePath
       }
 
     }

@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <el-card shadow="hover" class="mgb20" style="height:252px;">
       <div class="user-info-list">
         <img :src="this.userInfoForm.head" class="user-avator" alt/>
@@ -9,7 +8,7 @@
           <div>{{this.userInfoForm.permission}}</div>
           <div>{{this.userInfoForm.mail}}</div>
           <el-button type="text" @click="dialogUserVisible=true">编辑资料</el-button>
-          <el-dialog title="编辑个人资料" :visible.sync="dialogUserVisible">
+          <el-dialog class="dialog" title="编辑个人资料" :visible.sync="dialogUserVisible">
             <el-form ref="userInfoForm" :model="userInfoForm" :rules="userInfoFormRules">
               <img :src="this.userInfoForm.head" class="user-avator" alt/>
               <el-upload
@@ -23,24 +22,27 @@
                 <el-button size="small" type="primary">点击上传</el-button>
                 <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过2MB</div>
               </el-upload>
-              <el-form-item label="用户名" label-width="120px">
+              <el-form-item label="用户名" label-width="100px">
                 <el-input v-model="userInfoForm.newname"></el-input>
               </el-form-item>
-              <el-form-item label="邮箱" label-width="120px">
+              <el-form-item label="邮箱" label-width="100px">
                 <el-row>
                   <el-col :span="15">
                     <el-input v-model="userInfoForm.newmail"></el-input>
                   </el-col>
                   <el-col :span="5">
-                    <el-button type="text" @click="sendCode">验证</el-button>
+                    <el-button type="text" @click="hidden=!hidden">发送验证码</el-button>
                   </el-col>
-                  <el-dialog title="输入验证码" :visible.sync="dialogCode" append-to-body>
+                </el-row>
+              </el-form-item>
+              <el-form-item v-show="hidden" label="验证码" label-width="100px">
+                <el-row>
+                  <el-col :span="15">
                     <el-input v-model="Code"></el-input>
-                    <div slot="footer" class="dialog-footer">
-                      <el-button @click="dialogCode = false">取 消</el-button>
-                      <el-button type="primary" @click="updateCode">确 定</el-button>
-                    </div>
-                  </el-dialog>
+                  </el-col>
+                  <el-col :span="5">
+                    <el-button type="text" @click="updateCode">验证</el-button>
+                  </el-col>
                 </el-row>
               </el-form-item>
             </el-form>
@@ -143,7 +145,8 @@
             {required: true, message: '请输入用户名!', trigger: 'blur'},
             {min: 3, max: 10, message: '长度在 3 到 10 个字符', trigger: 'blur'}
           ]
-        }
+        },
+        hidden: false
       };
     },
     created() {
@@ -217,13 +220,13 @@
       sendCode() {
         this.$refs.userInfoForm.validate(async valid => {
           if (!valid) return
-          this.dialogCode = true
-          this.$message.success('正在发送验证码')
+          this.hidden = true
           const response = await this.$http.post('user/verifyCode', this.userInfoForm)
           const {data: res} = response
           console.log(res)
-          if (res.code == 200) this.$message.success(res.msg)
-          else if (res.code) this.$message.error(res.msg)
+          if (res.code == 200) {
+            this.$message.success(res.msg)
+          } else if (res.code) this.$message.error(res.msg)
           else this.$message.info(res.msg)
         })
       },
@@ -279,6 +282,14 @@
     border-radius: 50%;
   }
 
+  .el-dialog__wrapper {
+    width: 850px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 
   .user-info-cont {
     padding-left: 10px;

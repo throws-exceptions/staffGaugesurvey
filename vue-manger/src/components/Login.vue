@@ -74,7 +74,7 @@
             window.sessionStorage.setItem('head', result.head)
             window.sessionStorage.setItem('permission', result.permission)
             window.sessionStorage.setItem('username', result.username)
-            if (this.loginForm.isRemember === '1') window.sessionStorage.setItem('token', result.token_id)
+            if (this.loginForm.isRemember === '1') this.$Cookies.set('token', result.token_id)
             this.$message.success('登录成功')
             this.$router.push({path: '/index'})
           } else if (result.code === 500) return this.$message.error(result.msg)
