@@ -1,26 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" native2AsciiForPropertiesFiles="true">
-    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/api-gateway-zuul" charset="UTF-8" />
+  <component name="Encoding">
     <file url="file://$PROJECT_DIR$/api-gateway-zuul/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/api-gateway-zuul/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/staffGauge-survey-cargo" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/staffGauge-survey-cargo-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/staffGauge-survey-cargo-server/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/staffGauge-survey-cargo/cargo-api" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/staffGauge-survey-cargo/cargo-api/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/staffGauge-survey-cargo/cargo-provider/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/staffGauge-survey-user" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/staffGauge-survey-user-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/staffGauge-survey-user-server/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/staffGauge-survey-user-server/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/staffGauge-survey-user/user-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/staffGauge-survey-user/user-api/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/staffGauge-survey-user/user-provider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/staffGauge-survey-user/user-provider/src/main/resources" charset="UTF-8" />
   </component>
 </project>
