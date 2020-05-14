@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.staffGauge.survey.cargo.dal.persistence.CargoMapper">
+    <resultMap id="BaseResultMap" type="com.cargo.dao.Cargo">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <result column="cargo_id" jdbcType="INTEGER" property="cargoId"/>
+        <result column="freighters_num" jdbcType="VARCHAR" property="freightersNum"/>
+        <result column="start_weight" jdbcType="REAL" property="startWeight"/>
+        <result column="end_weight" jdbcType="REAL" property="endWeight"/>
+        <result column="goods_weight" jdbcType="REAL" property="goodsWeight"/>
+        <result column="person" jdbcType="VARCHAR" property="person"/>
+        <result column="time" jdbcType="VARCHAR" property="time"/>
+    </resultMap>
+    <sql id="BaseColumns">
+    freighters_num,start_weight,end_weight,goods_weight,person,time
+  </sql>
+
+
+    <select id="selectCargoByUserName" resultMap="BaseResultMap" parameterType="java.lang.String">
+        select <include refid="BaseColumns"></include> from cargo where person=#{person}
+    </select>
+    <select id="selectAllCargoList" resultMap="BaseResultMap">
+        select <include refid="userInformation"></include> from cargo
+    </select>
+    <insert id="addCargo">
+        insert into cargo (<include refid="BaseColumns"></include>)
+        values (#{freightersNum},#{startWeight},#{endWeight},#{goodsWeight},#{person},#{time})
+    </insert>
+
+
+</mapper>

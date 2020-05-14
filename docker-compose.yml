@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  user-dubbo-provider:
+    image: user-dubbo-provider:1.0
+    command:
+      - "--mysql.address=192.168.1.142"
+      - "--zk.address=192.168.1.142"
+  user-service:
+    image: user-service:1.0
+    links:
+      - user-dubbo-provider
+    command:
+      - "--redis.address=192.168.1.142"
+      - "--zk.address=192.168.1.142"
+  api-gateway-zuul:
+    image: api-gateway-zuul:1.0
+    links:
+      - user-service
+      #还有cargo服务要编写
+    ports:
+      - 8080:8080
+      #网关使用端口映射
+#还有剩下的除了client与前端打包来执行，剩下的都使用docker部署，这时候就需要来这里写docker依赖关系
+
