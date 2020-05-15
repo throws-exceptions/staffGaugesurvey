@@ -34,6 +34,7 @@ public class CargoServiceImpl implements ApiCargoService {
     @Override
     public PageInfo<Cargo> selectCargoList(Cargo cargo) {
         PageHelper.startPage(cargo.getPageNum(), cargo.getPageSize());
+        System.out.println(cargo.getPerson());
         List<Cargo> cargoList = cargoMapper.selectCargoByUserName(cargo.getPerson());
         PageInfo<Cargo> pageInfo = new PageInfo<>(cargoList);
         return pageInfo;

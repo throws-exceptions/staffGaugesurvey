@@ -1,7 +1,7 @@
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/staffgaugesurvey?serverTimezone=UTC
-    cargoname: root
+    username: root
     password: 282818
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource

@@ -1,0 +1,72 @@
+%boxSizing {
+  box-sizing: border-box;
+}
+
+%TextEllipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+[class*="vxe-"] {
+  @extend %boxSizing;
+  &:after, &:before,
+  *:after, *:before {
+    @extend %boxSizing;
+  }
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-variant: tabular-nums;
+  font-feature-settings: 'tnum';
+}
+
+.vxe-primary-color {
+  color: $vxe-primary-color;
+}
+.vxe-success-color {
+  color: $vxe-success-color;
+}
+.vxe-info-color {
+  color: $vxe-info-color;
+}
+.vxe-warning-color {
+  color: $vxe-warning-color;
+}
+.vxe-danger-color {
+  color: $vxe-danger-color;
+}
+.vxe-perfect-color {
+  color: $vxe-table-header-background-color;
+}
+
+/*animat*/
+.t--animat {
+  .vxe-sort--asc-btn,
+  .vxe-sort--desc-btn,
+  .vxe-filter--btn {
+    &:before,
+    &:after {
+      @include animatTransition(border);
+    }
+  }
+  .vxe-input--wrapper {
+    .vxe-input {
+      @include animatTransition(border);
+    }
+  }
+  .vxe-table--expand-btn,
+  .vxe-tree--node-btn {
+    @include animatTransition(transform);
+  }
+  .vxe-checkbox,
+  .vxe-radio {
+    > input {
+      &:checked+span {
+        @include animatTransition(background-color);
+      }
+    }
+  }
+}

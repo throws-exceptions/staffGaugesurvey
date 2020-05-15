@@ -1,10 +1,10 @@
 dubbo:
   application:
-    name: api-consumer
+    name: user-consumer
     owner: Fu
   protocol:
     name: dubbo
-    port: 20882
+    port: 20880
   registry:
     address: zookeeper://localhost:2181
     check: true

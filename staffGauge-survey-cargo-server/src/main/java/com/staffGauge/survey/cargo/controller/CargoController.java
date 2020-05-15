@@ -5,7 +5,7 @@ import com.cargo.dao.Cargo;
 import com.github.pagehelper.PageInfo;
 import com.staffGauge.survey.cargo.thrift.CargoServiceProvider;
 import com.staffGauge.survey.cargo.util.JSONString;
-import jdk.nashorn.internal.ir.annotations.Reference;
+import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -86,7 +86,7 @@ public class CargoController {
         cargo.setPageNum(pageNum);
         cargo.setPageSize(pageSize);
         cargo.setPerson(username);
-        return cargoService.selectAllCargoList(cargo);
+        return cargoService.selectCargoList(cargo);
     }
 
     @RequestMapping("/insertCargo")
@@ -96,11 +96,13 @@ public class CargoController {
         Map<String, String> data = JSONString.parseJson(request);
         Cargo cargo = new Cargo();
         cargo.setFreightersNum(data.get("freightersNum"));
-        cargo.setStartWeight(Float.valueOf(data.get("startWeight")));
-        cargo.setStartWeight(Float.valueOf(data.get("endWeight")));
-        cargo.setStartWeight(Float.valueOf(data.get("goodsWeight")));
+        cargo.setStartWeight(Float.parseFloat(data.get("startWeight")));
+        cargo.setEndWeight(Float.parseFloat(data.get("endWeight")));
+        cargo.setGoodsWeight(Float.parseFloat(data.get("goodsWeight")));
         cargo.setPerson(data.get("person"));
-        cargo.setTime(data.get("time"));
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
+        System.out.println(df.format(new Date()));// new Date()为获取当前系统时间
+        cargo.setTime(df.format(new Date()));
         if (cargoService.insertCargolList(cargo)) return JSONString.getJSONString(200, "写入货物成功");
         else return JSONString.getJSONString(500, "服务器异常");
     }

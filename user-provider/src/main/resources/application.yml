@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/staffgaugesurvey?serverTimezone=UTC
     username: root
-    password: '282818'
+    password: 282818
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
   devtools:
@@ -28,7 +28,7 @@ dubbo:
     owner: Fu
   protocol:
     name: dubbo
-    port: 20882
+    port: 20880
   registry:
     address: zookeeper://192.168.0.103:2181
     check: true

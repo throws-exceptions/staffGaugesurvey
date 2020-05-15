@@ -1,0 +1,17 @@
+/*全局样式*/
+html, body, #app {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0
+}
+
+.el-breadcrumb {
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+
+/*.el-table td {*/
+/*    padding: 0;*/
+/*}*/

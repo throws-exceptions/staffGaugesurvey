@@ -4,8 +4,8 @@ public enum Menu {
     menu1(1, "首页", "/index", "B"),
     menu2(2, "用户管理", "/user/manger", "A"),
     menu3(3, "识别系统", "/distinguish", "B"),
-    menu4(4, "设备状态查询", "/device/status", "B"),
-    menu5(5, "设备状态管理", "/device/manger", "A");
+    menu4(4, "货物个人统计", "/cargo", "B"),
+    menu5(5, "货物统计", "/cargoManger", "A");
     private int id;
     private String authName;
     private String path;

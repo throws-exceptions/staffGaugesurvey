@@ -22,7 +22,7 @@
         select <include refid="BaseColumns"></include> from cargo where person=#{person}
     </select>
     <select id="selectAllCargoList" resultMap="BaseResultMap">
-        select <include refid="userInformation"></include> from cargo
+        select <include refid="BaseColumns"></include> from cargo
     </select>
     <insert id="addCargo">
         insert into cargo (<include refid="BaseColumns"></include>)
