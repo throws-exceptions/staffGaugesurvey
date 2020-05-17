@@ -10,7 +10,6 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>staffGauge-survey-user-server</module>
-        <module>staffGauge-survey-user</module>
         <module>staffGauge-survey-cargo-server</module>
         <module>user-api</module>
         <module>user-provider</module>

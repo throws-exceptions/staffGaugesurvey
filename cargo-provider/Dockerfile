@@ -1,7 +1,7 @@
 FROM java:8
 MAINTAINER Mr.Fu 1163107972@qq.com
 
-COPY target/user-provider-1.0-SNAPSHOT.jar /user-provide.jar
+COPY target/cargo-provider-1.0-SNAPSHOT.jar /cargo-provider.jar
 
 
-ENTRYPOINT ["java","-jar","/user-provide.jar","--ip=192.168.0.103"]
+ENTRYPOINT ["java","-jar","/cargo-provider.jar"]

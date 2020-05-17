@@ -1,22 +1,22 @@
 thrift:
-  ip: 127.0.0.1
+  ip: ${thrift_ip}
   port: 8000
 server:
   port: 8085
 dubbo:
   application:
-    name: cargo-consumer
+    name: cargo-server
     owner: Fu
   protocol:
     name: dubbo
     port: 20882
   registry:
-    address: zookeeper://localhost:2181
+    address: zookeeper://${zookeeper_ip}:2181
     check: true
     group: dubbo-dev
     simplified: true
   metadata-report:
-    address: zookeeper://localhost:2181
+    address: zookeeper://${zookeeper_ip}:2181
     retry-times: 30
     cycle-report: false
     group: dubbo-dev

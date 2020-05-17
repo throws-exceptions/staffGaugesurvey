@@ -5,4 +5,4 @@ COPY target/staffGauge-survey-user-server-1.0-SNAPSHOT.jar /user-server.jar
 
 EXPOSE 8083
 
-ENTRYPOINT ["java","-jar","/user-server.jar","--ip=192.168.0.103"]
+ENTRYPOINT ["java","-jar","/user-server.jar"]

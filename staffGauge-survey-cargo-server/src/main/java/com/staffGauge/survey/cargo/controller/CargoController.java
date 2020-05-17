@@ -58,8 +58,7 @@ public class CargoController {
         //将文件保存到服务器指定位置
         try {
             picture.transferTo(targetFile);
-            //ToDo 调用接口
-            msg = cargoServiceProvider.getCargoService("127.0.0.1", 8000, path + fileName);
+            msg = cargoServiceProvider.getCargoService(path + fileName);
             System.out.println(msg);
         } catch (Exception e) {
 

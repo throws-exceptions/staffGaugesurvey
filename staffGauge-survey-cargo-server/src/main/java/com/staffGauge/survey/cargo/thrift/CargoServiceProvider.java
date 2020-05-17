@@ -6,6 +6,7 @@ import org.apache.thrift.protocol.TProtocol;
 import org.apache.thrift.transport.TSocket;
 import org.apache.thrift.transport.TTransport;
 import org.apache.thrift.transport.TTransportException;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 /**
@@ -13,8 +14,12 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class CargoServiceProvider {
+    @Value("${thrift.ip}")
+    private String serverIp;
+    @Value("${thrift.port}")
+    private int serverPort;
 
-    public String getCargoService(String serverIp, int serverPort, String path) {
+    public String getCargoService(String path) {
         TTransport transport = new TSocket(serverIp, serverPort);
         try {
             transport.open();
@@ -33,26 +38,6 @@ public class CargoServiceProvider {
         } finally {
             transport.close();
         }
-    }
-
-    public static void main(String[] args) {
-        TTransport transport = new TSocket("127.0.0.1", 8000);
-        try {
-            transport.open();
-            TProtocol protocol = new TBinaryProtocol(transport);
-            Transmit.Client client = new Transmit.Client(protocol);
-
-            //接口调用
-            String rs = client.sayMsg("/home/diamond/桌面/staffGaugesurvey/match/IMG_1249.JPG");
-            //打印调用结果
-            System.out.println("java client:" + rs);
-            transport.close();
-        } catch (TTransportException e) {
-            e.printStackTrace();
-        } catch (TException e) {
-            e.printStackTrace();
-        }
-
     }
 
 
